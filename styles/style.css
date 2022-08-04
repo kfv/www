@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Oxanium;
+  src: url('/fonts/Oxanium-VariableFont_wght.ttf')
+       format('truetype-variations');
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 80%;
+  }
+  pre {
+    word-break: break-all;
+    word-wrap:  break-word;
+  }
+  p { font-size: 20px; }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    width: 80%;
+  }
+  p { font-size: 20px; }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 75%;
+  }
+  p { font-size: 25px; }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 75%;
+  }
+  pre {
+    word-break: break-all;
+    word-wrap:  break-word;
+  }
+  p { font-size: 25px; }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    width: 65%;
+  }
+  p { font-size: 28px; }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 55%;
+  }
+  p { font-size: 38px; }
+}
+
+a:link {
+        color: #f8d062;
+        text-decoration: none;
+}
+
+a:active {
+        color: #f8d062;
+        text-decoration: none;
+}
+
+a:hover {
+        color: #f8d062;
+        text-decoration: none;
+}
+
+a:visited {
+        color: #d9b555;
+        text-decoration: none;
+}
+
+a:visited:hover {
+        color: #f8d062;
+        text-decoration: none;
+}
+
+::selection {
+	color: #ededed;
+	background: #798f8f;
+}
+
+:root {
+  background-color: #202124;
+  color:            #ffffff;
+  font-family:      Oxanium;
+}
+
+body {
+  margin-top:   10%;
+  margin-left:  auto;
+  margin-right: auto;
+}
