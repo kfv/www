@@ -1,0 +1,341 @@
+<div class="flex justify-between">
+    <h1 class="text-3xl my-3 font-bold">
+        Faraz Vahedi
+    </h1>
+    <!-- Contact -->
+    <div class="my-3 text-neutral-700/80 dark:text-neutral-400
+                  float-right">
+        <div class="mt-3 mb-5">
+            <a class="box-border border border-neutral-700/80
+                    rounded-lg p-3 w-fit duration-500
+                    hover:text-white hover:bg-black
+                    dark:hover:bg-white dark:hover:text-black"
+               href="/about/cv.pdf">
+                Download PDF
+            </a>
+        </div>
+        <div class="my-3 grid border-l border-neutral-800">
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="https://kfv.io/">
+                <i class="mr-1 sm:mr-2 fa-solid fa-globe"></i>
+                kfv.io
+            </a>
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="mailto:kfv@kfv.io">
+                <i class="mr-1 sm:mr-2 fa-solid fa-envelope"></i>
+                kfv@kfv.io
+            </a>
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="https://github.com/kfv">
+                <i class="mr-1 sm:mr-2 fa-brands fa-github"></i>
+                github.com/kfv
+            </a>
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="https://twitter.com/__kfv__">
+                <i class="mr-1 sm:mr-2 fa-brands fa-twitter"></i>
+                twitter.com/__kfv__
+            </a>
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="https://www.linkedin.com/in/kfv">
+                <i class="mr-1 sm:mr-2 fa-brands fa-linkedin"></i>
+                linkedin.com/in/kfv
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Overview -->
+<div class="flex flex-wrap-reverse">
+    <h1 class="text-2xl mr-2 font-bold">
+        OVERVIEW
+    </h1>
+    <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<div class="my-3">
+    <p>
+        I am a senior DevOps Engineer with hands-on experience designing,
+        implementing, developing, and maintaining cloud-native applications and
+        environments. Interested in programming language design, compilers,
+        UNIX, RISC processors, cloud computing, mathematics, and algorithms.
+    </p>
+</div>
+
+<!-- Skills -->
+<div class="flex flex-wrap-reverse">
+    <h1 class="text-2xl mr-2 font-bold">
+        SKILLS
+    </h1>
+    <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Skilled Software Engineer with hands-on experience in several
+            programming languages, including C, C++, Swift, Rust, Haskell,
+            Go, and Python.
+        </li>
+        <li>
+            Experienced with Forth, Lua, Oberon, Java, Kotlin, JavaScript,
+            and LISP programming languages.
+        </li>
+        <li>
+            Deeply experienced with TCP/IP and networking protocols.
+        </li>
+        <li>
+            Well versed in developing and enhancing CI/CD pipelines.
+        </li>
+        <li>
+            Fluent in
+            <span class="texhtml" style="font-family:
+            'CMU Serif',
+            cmr10,
+            LMRoman10-Regular,
+            'Latin Modern Math',
+            'Nimbus Roman No9 L',
+            'Times New Roman',
+            Times,
+            serif;">
+              L
+              <span style="text-transform: uppercase; font-size: 0.75em;
+                           vertical-align: 0.25em; margin-left: -0.36em;
+                           margin-right: -0.15em; line-height: 1ex;">
+                a
+              </span>
+              T
+              <span style="text-transform: uppercase;
+                           vertical-align: -0.25em;
+                           margin-left: -0.1667em;
+                           margin-right: -0.125em;
+                           line-height: 1ex;">
+                e
+              </span>
+              X
+            </span>
+            for day-to-day technical and scientific documents.
+        </li>
+        <li>
+            Have a good understanding of Agile development methodologies.
+        </li>
+    </ul>
+</div>
+
+<!-- Professional History -->
+<div class="flex flex-wrap-reverse">
+    <h1 class="text-2xl mr-2 font-bold">
+        PROFESSIONAL HISTORY
+    </h1>
+    <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<!-- illuria Security, Inc. -->
+<div class="flex justify-between mt-3">
+    <h2 class="text-xl font-bold">
+        illuria Security, Inc.
+    </h2>
+    <p class="italic">
+        open source contributor & outside collaborator
+    </p>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        Systems Engineer
+    </p>
+    <p class="italic">
+        Jan. 2022 - Present
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Co-leading the infrastructure and release-engineering team.
+        </li>
+        <li>
+            Maintainer of illuria’s open source projects and upstream FreeBSD
+            ports.
+        </li>
+        <li>
+            Developing a new FreeBSD Jail manager with simplicity and
+            customisability in mind.
+        </li>
+        <li>
+            Responsible for the dynamic instrumentation of production systems
+            with DTrace, for monitoring and troubleshooting both kernel
+            and application problems. Moreover, developed various DTrace
+            scripts to gather unprovided information from protocols and
+            services in use, including but not limited to FreeBSD jails, SSH,
+            MySQL, PostgreSQL, and xrdp.
+        </li>
+    </ul>
+</div>
+<!-- Khallagh Borhan, Inc. -->
+<div class="flex justify-between mt-3">
+    <h2 class="text-xl font-bold">
+        Khallagh Borhan, Inc.
+    </h2>
+    <p class="italic">
+        full-time
+    </p>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        Software Engineer
+    </p>
+    <p class="italic">
+        Mar. 2021 - May. 2021
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Returned to Khallagh's Research & Development team, successfully
+            delivering a new DDoS Protection system.
+        </li>
+        <li>
+            Delivered a high-available Network Anomaly Detection platform
+            with a highly-constrained budget.
+        </li>
+        <li>
+            Leveraged BSD sockets, Berkey-Packet Filter, Netmap for
+            high-efficiency, ioctl operations to control the behaviour of
+            the packet filter, and SQLite API.
+        </li>
+    </ul>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        Lead DevOps Engineer
+    </p>
+    <p class="italic">
+        Apr. 2019 - Feb. 2020
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Led the engineering team, architected and delivered regional
+            Kubernetes clusters.
+        </li>
+        <li>
+            Provided training to engineering teams on the use of
+            containers, the Git Version Control System, and Continuous
+            Integration, Delivery, and Deployment pipelines.
+        </li>
+        <li>
+            Automated build process and sped up deployments by 80% by
+            implementing Continuous Tests and leveraging CI/CD pipelines.
+        </li>
+        <li>
+            Provided training to NOC personnel on understanding metrics
+            and maintaining the platform.
+        </li>
+        <li>
+            Developed an agentless cluster provisioner and manager to
+            facilitate the scaling and maintenance procedures.
+        </li>
+    </ul>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        DevOps Engineer
+    </p>
+    <p class="italic">
+        Sep. 2016 - Dec. 2018
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Rearchitected the infrastructure of a multimedia streaming
+            platform and improved the overall performance by 80% and
+            achieved 99.9% uptime.
+        </li>
+        <li>
+            Detected improper reference model in the application and
+            reduced memory usage by 75% after resolving memory leaks.
+        </li>
+        <li>
+            Increased delivery velocity by 70% and removed bureaucratic
+            interruptions by introducing Con- tinuous Tests and building
+            a sustainable agile culture.
+        </li>
+        <li>
+            Got promoted thrice and worked on 4 different projects.
+        </li>
+        <li>
+            Designed and set up monitoring and alerting systems for NOC.
+        </li>
+    </ul>
+</div>
+<!-- Bidopin -->
+<div class="flex justify-between mt-3">
+    <h2 class="text-xl font-bold">
+        Bidopin
+    </h2>
+    <p class="italic">
+        full-time
+    </p>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        DevOps Engineer
+    </p>
+    <p class="italic">
+        Dec. 2017 - Mar. 2019
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Helped the engineering department to bounce back from a pivotal
+            setback caused by the lack of a trusted DevOps culture and
+            Business-IT alignment.
+        </li>
+        <li>
+            Built a rational roadmap and bridged the gap between IT and
+            business decision-makers by defining mutual objectives and
+            reforming expectations.
+        </li>
+        <li>
+            Provided training to engineering teams on understanding Git
+            workflows and making the most of Version Control Systems.
+        </li>
+        <li>
+            Defined release, change, versioning, and upgrade policies.
+        </li>
+        <li>
+            Architected an infrastructure to ensure high availability.
+        </li>
+        <li>
+            Consolidated database and reduced costs by 70%.
+        </li>
+    </ul>
+</div>
+
+
+<!-- Volunteer Work -->
+<div class="flex flex-wrap-reverse">
+    <h1 class="text-2xl mr-2 font-bold">
+        Volunteer Work
+    </h1>
+    <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Contributed to the FreeBSD Project from Jun. 2019 to
+            Aug. 2022 (src, ports, and docs.)
+        </li>
+        <li>
+            Organised Iran BSD User Group (IRBUG) from April 2019 to
+            January 2021. Used to run work-shops and hold monthly
+            meetings to gather around and share knowledge.
+        </li>
+        <li>
+            Translated HTTP3-Explained from English into Persian.
+        </li>
+    </ul>
+</div>

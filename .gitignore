@@ -1,7 +1,4 @@
 .idea/
 .DS_Store
-
+.svelte-kit/
 node_modules
-package-lock.json
-package.json
-tailwindcss
