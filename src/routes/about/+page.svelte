@@ -58,10 +58,13 @@
 </div>
 <div class="my-3">
     <p>
-        I am a senior DevOps Engineer with hands-on experience designing,
-        implementing, developing, and maintaining cloud-native applications and
-        environments. Interested in programming language design, compilers,
-        UNIX, RISC processors, cloud computing, mathematics, and algorithms.
+        Systems Engineer with a comprehensive background in UNIX-like operating
+        systems, compilers, and server-side applications. Experienced in designing,
+        implementing, and maintaining cloud-native applications within large-scale
+        environments. Showcasing a good understanding of CI/CD pipelines,
+        orchestration platforms, and the principles underpinning the DevOps culture.
+        Dedicated to promoting synergy between software development and system
+        operations, focusing on efficiency and systematic innovation.
     </p>
 </div>
 
@@ -75,51 +78,32 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Skilled Software Engineer with hands-on experience in several
-            programming languages, including C, C++, Swift, Rust, Haskell,
-            Go, and Python.
+            Accomplished Software Engineer with proficiency in C, C++, Rust, and
+            Swift, alongside considerable experience and familiarity with Python,
+            Lua, Go, Forth, Haskell, and JavaScript.
         </li>
         <li>
-            Experienced with Forth, Lua, Oberon, Java, Kotlin, JavaScript,
-            and LISP programming languages.
+            Extensive experience with OS-level virtualisation including FreeBSD
+            jails, Solaris Zones, and Docker.
         </li>
         <li>
-            Deeply experienced with TCP/IP and networking protocols.
+            Demonstrating a strong competency in the development of CI/CD
+            pipelines, underpinned by hands-on experience in architecting a CI/CD
+            platform from the ground up.
         </li>
         <li>
-            Well versed in developing and enhancing CI/CD pipelines.
+            Competent in leveraging orchestration platforms such as Kubernetes
+            for the effective management and scaling of containerised
+            applications.
         </li>
         <li>
-            Fluent in
-            <span class="texhtml" style="font-family:
-            'CMU Serif',
-            cmr10,
-            LMRoman10-Regular,
-            'Latin Modern Math',
-            'Nimbus Roman No9 L',
-            'Times New Roman',
-            Times,
-            serif;">
-              L
-              <span style="text-transform: uppercase; font-size: 0.75em;
-                           vertical-align: 0.25em; margin-left: -0.36em;
-                           margin-right: -0.15em; line-height: 1ex;">
-                a
-              </span>
-              T
-              <span style="text-transform: uppercase;
-                           vertical-align: -0.25em;
-                           margin-left: -0.1667em;
-                           margin-right: -0.125em;
-                           line-height: 1ex;">
-                e
-              </span>
-              X
-            </span>
-            for day-to-day technical and scientific documents.
+            Committed full-stack developer, consistently broadening knowledge
+            across various technology stacks, with adherence to best practices
+            and a focus on software security.
         </li>
         <li>
-            Have a good understanding of Agile development methodologies.
+            Collaborative team member with a firm grasp of agile methodologies,
+            promoting a shared and iterative approach to project delivery.
         </li>
     </ul>
 </div>
@@ -137,7 +121,7 @@
         illuria Security, Inc.
     </h2>
     <p class="italic">
-        open source contributor & outside collaborator
+        full-time
     </p>
 </div>
 <div class="flex justify-between">
@@ -145,29 +129,58 @@
         Systems Engineer
     </p>
     <p class="italic">
-        Jan. 2022 - Present
+        Jan. 2022 - Jun. 2023
     </p>
 </div>
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Co-leading the infrastructure and release-engineering team.
+            Co-led the infrastructure and release-engineering teams,
+            driving the formulation and execution of key strategies aimed at
+            elevating system scalability, security, and high availability.
         </li>
         <li>
-            Maintainer of illuria’s open source projects and upstream FreeBSD
-            ports.
+            Devised optimal strategies to minimise the impact on network
+            bandwidth and IOPS during concurrent large-scale upgrades of FreeBSD
+            jails, thereby enhancing the efficiency of system updates.
         </li>
         <li>
-            Developing a new FreeBSD Jail manager with simplicity and
-            customisability in mind.
+            Developed an automated system to create internally customised
+            FreeBSD distribution images in various formats, including raw, ISO
+            9660, VHD, and VDI—upon the initiation of a new release.
         </li>
         <li>
-            Responsible for the dynamic instrumentation of production systems
-            with DTrace, for monitoring and troubleshooting both kernel
-            and application problems. Moreover, developed various DTrace
-            scripts to gather unprovided information from protocols and
-            services in use, including but not limited to FreeBSD jails, SSH,
-            MySQL, PostgreSQL, and xrdp.
+            Constructed effective CI/CD pipelines integrated with exhaustive
+            continuous testing procedures, guaranteeing efficient software
+            delivery and seamless swift deployments.
+        </li>
+        <li>
+            Utilised Poudriere to automate testing and package building
+            procedures, whilst maintaining a public package repository for client
+            use, facilitating seamless access to the most recent software
+            updates.
+        </li>
+        <li>
+            Supervised the maintenance of illuria's open source projects and
+            upstream FreeBSD ports.
+        </li>
+        <li>
+            Engineered a diverse suite of internal applications using Rust (for
+            APIs and system utilities,) C (for system utilities,) DTrace (for
+            dynamic instrumentation of production systems and data collection
+            from operational services and protocols,) POSIX shell scripts, and
+            Oberon.
+        </li>
+        <li>
+            Developed and managed an extensive monitoring and alerting system
+            using custom shell, Python, and DTrace scripts, improving system
+            visibility and enabling proactive issue resolution.
+        </li>
+        <li>
+            Designed and implemented a holistic documentation platform, enabling
+            seamless delivery of critical information in the form of wikis and
+            books—significantly streamlining data accessibility, boosting team
+            productivity, and fostering knowledge sharing.
         </li>
     </ul>
 </div>
@@ -191,17 +204,13 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Returned to Khallagh's Research & Development team, successfully
-            delivering a new DDoS Protection system.
+            Rejoined Khallagh's Research & Development team to develop a
+            DDoS Protection system.
         </li>
         <li>
-            Delivered a high-available Network Anomaly Detection platform
-            with a highly-constrained budget.
-        </li>
-        <li>
-            Leveraged BSD sockets, Berkey-Packet Filter, Netmap for
-            high-efficiency, ioctl operations to control the behaviour of
-            the packet filter, and SQLite API.
+            Delivered a high-available Network Anomaly Detection platform within
+            a highly-constrained budget using BSD sockets, Berkely-Packet Filter, Netmap,
+            and SQLite API.
         </li>
     </ul>
 </div>
@@ -216,25 +225,27 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Led the engineering team, architected and delivered regional
+            Led the engineering team in architecting and delivering regional
             Kubernetes clusters.
         </li>
         <li>
-            Provided training to engineering teams on the use of
-            containers, the Git Version Control System, and Continuous
-            Integration, Delivery, and Deployment pipelines.
+            Conducted training sessions for engineering teams on the use of
+            containers, Git Version Control System, and Continuous Integration,
+            Delivery, and Deployment pipelines.
         </li>
         <li>
-            Automated build process and sped up deployments by 80% by
-            implementing Continuous Tests and leveraging CI/CD pipelines.
+            Developed an interactive agentless Kubernetes cluster provisioner and
+            manager, designed to simplify scaling operations and routine
+            maintenance procedures.
         </li>
         <li>
-            Provided training to NOC personnel on understanding metrics
-            and maintaining the platform.
+            Automated the build process and sped up deployments by 80% through
+            the implementation of Continuous Tests and the leveraging of CI/CD
+            pipelines.
         </li>
         <li>
-            Developed an agentless cluster provisioner and manager to
-            facilitate the scaling and maintenance procedures.
+            Trained NOC personnel on understanding cluster metrics and
+            maintaining the platform.
         </li>
     </ul>
 </div>
@@ -243,30 +254,27 @@
         DevOps Engineer
     </p>
     <p class="italic">
-        Sep. 2016 - Dec. 2018
+        Sept. 2016 - Dec. 2018
     </p>
 </div>
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Rearchitected the infrastructure of a multimedia streaming
-            platform and improved the overall performance by 80% and
-            achieved 99.9% uptime.
+            Rearchitected the infrastructure of a multimedia streaming platform,
+            boosting overall performance by 80% and achieving 99.9% uptime.
         </li>
         <li>
-            Detected improper reference model in the application and
-            reduced memory usage by 75% after resolving memory leaks.
+            Identified an improper reference model in the application, leading to
+            the resolution of memory leaks and a 75% reduction in memory usage,
+            from 64GB down to 16GB.
         </li>
         <li>
-            Increased delivery velocity by 70% and removed bureaucratic
-            interruptions by introducing Con- tinuous Tests and building
-            a sustainable agile culture.
+            Increased delivery velocity by 70% by introducing Continuous Tests
+            and creating a sustainable Agile culture.
         </li>
         <li>
-            Got promoted thrice and worked on 4 different projects.
-        </li>
-        <li>
-            Designed and set up monitoring and alerting systems for NOC.
+            Implemented Distributed Replicated GlusterFS volumes, improving data
+            redundancy and overall system reliability.
         </li>
     </ul>
 </div>
@@ -290,27 +298,35 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Helped the engineering department to bounce back from a pivotal
-            setback caused by the lack of a trusted DevOps culture and
-            Business-IT alignment.
+            Assisted the engineering department in overcoming setbacks by
+            implementing a trusted DevOps culture and aligning Business-IT
+            objectives.
         </li>
         <li>
-            Built a rational roadmap and bridged the gap between IT and
-            business decision-makers by defining mutual objectives and
-            reforming expectations.
+            Architected an infrastructure to ensure high availability and
+            consolidated databases, leading to a 70% reduction in costs.
         </li>
         <li>
-            Provided training to engineering teams on understanding Git
-            workflows and making the most of Version Control Systems.
+            Leveraged FreeBSD jails for OS-level virtualisation, to enhance
+            system performance and scalability.
         </li>
         <li>
-            Defined release, change, versioning, and upgrade policies.
+            Heavily utilised and optimised ZFS filesystem, maximising data
+            integrity and facilitating efficient snapshots, replication, and data
+            compression for effective storage management.
         </li>
         <li>
-            Architected an infrastructure to ensure high availability.
+            Leveraged ZFS deduplication and tiered caching (ARC and L2ARC)
+            capabilities to optimise storage performance, ensuring high
+            availability and fast recovery in large-scale environments.
         </li>
         <li>
-            Consolidated database and reduced costs by 70%.
+            Developed and managed robust CI/CD pipelines to automate deployments,
+            improve system testing, and speed up the release cycle.
+        </li>
+        <li>
+            Defined thorough backup and upgrade policies to safeguard
+            system data and ensure seamless software updates.
         </li>
     </ul>
 </div>
@@ -319,23 +335,44 @@
 <!-- Volunteer Work -->
 <div class="flex flex-wrap-reverse">
     <h1 class="text-2xl mr-2 font-bold">
-        Volunteer Work
+        VOLUNTEER WORK
     </h1>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Contributed to the FreeBSD Project from Jun. 2019 to
-            Aug. 2022 (src, ports, and docs.)
+            Active contributor to the
+            <span class="italic">
+                FreeBSD Project
+            </span> since
+            <span class="italic">
+                June 2019.
+            </span>
         </li>
         <li>
-            Organised Iran BSD User Group (IRBUG) from April 2019 to
-            January 2021. Used to run work-shops and hold monthly
-            meetings to gather around and share knowledge.
+            Organised
+            <span class="italic">
+                Iran BSD User Group (IRBUG)
+            </span>
+            from
+            <span class="italic">
+                April 2019
+            </span>
+            to
+            <span class="italic">
+                January 2021.
+            </span>
+            Initiated regular workshops and monthly
+            meetings to foster knowledge sharing and collaboration
+            among members.
         </li>
         <li>
-            Translated HTTP3-Explained from English into Persian.
+            Translated
+            <span class="italic">
+                HTTP3-Explained
+            </span>
+            from English into Persian.
         </li>
     </ul>
 </div>
