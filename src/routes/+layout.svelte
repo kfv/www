@@ -22,7 +22,7 @@
     </div>
 </nav>
 
-<div class="main"><slot /></div>
+<div class="main relative"><slot /></div>
 
 <footer class="border-t border-neutral-800">
     <div class="text-sm text-neutral-400 my-3 mx-11 sm:mx-24 md:mx-48
