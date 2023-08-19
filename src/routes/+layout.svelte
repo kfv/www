@@ -10,12 +10,12 @@
             kfv
         </a>
         <a class="hover:text-black dark:hover:text-neutral-100 duration-500
-                float-right"
+                  float-right"
            href="/about/">
             about
         </a>
         <a class="hover:text-black dark:hover:text-neutral-100 duration-500
-                float-right mr-3"
+                  float-right mr-3"
            href="/blog/">
             blog
         </a>
