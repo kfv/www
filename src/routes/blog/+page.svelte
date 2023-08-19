@@ -40,8 +40,11 @@
     {#if totalPageCount > 1}
         <div class="flex justify-center space-x-4 mt-4">
             {#each Array(totalPageCount) as _, index (index)}
-                <button class="mt-7 px-3 py-2 border rounded hover:bg-neutral-700
-                               {currentPage === index ?'bg-neutral-800' : ''}"
+                <button class="mt-7 px-3 py-2 border rounded
+                               dark:hover:bg-neutral-700 hover:bg-neutral-600
+                               hover:text-neutral-100
+                               {currentPage === index            ?
+                               'bg-neutral-800 text-neutral-100' : ''}"
                         on:click={() => currentPage = index}>
                     {index + 1}
                 </button>
