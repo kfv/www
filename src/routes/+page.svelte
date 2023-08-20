@@ -1,4 +1,4 @@
-<h1 class="text-3xl my-3">
+<h1>
     Hello, world!
 </h1>
 <p>
@@ -31,9 +31,9 @@
     the lifeblood of my ambition, compelling me to innovate, learn,
     and push the boundaries.
 </p><br>
-<h2 class="text-emerald-600 dark:text-emerald-400 text-xl my-3">
+<h3 class="text-emerald-600 dark:text-emerald-400 my-3">
     Open to Opportunities
-</h2>
+</h3>
 <p>
     Currently, I am looking for the chance to relocate to Canada, the US,
     or the UAE. If there are impactful roles in Software, DevOps, or

@@ -37,4 +37,8 @@
     :global(body) {
         @apply bg-white dark:bg-black dark:text-white flex flex-col h-screen;
     }
+    :global(h1) { @apply text-3xl my-3; }
+    :global(h2) { @apply text-2xl my-2; }
+    :global(h3) { @apply text-xl; }
+    :global(section) { @apply mb-5; }
 </style>

@@ -1,5 +1,5 @@
 <div class="flex justify-between">
-    <h1 class="text-3xl my-3 font-bold">
+    <h1 class="font-bold">
         Faraz Vahedi
     </h1>
     <!-- Contact -->
@@ -51,9 +51,9 @@
 
 <!-- Overview -->
 <div class="flex flex-wrap-reverse">
-    <h1 class="text-2xl mr-2 font-bold">
+    <h2 class="my-0 mr-2 font-bold">
         OVERVIEW
-    </h1>
+    </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <div class="my-3">
@@ -70,9 +70,9 @@
 
 <!-- Skills -->
 <div class="flex flex-wrap-reverse">
-    <h1 class="text-2xl mr-2 font-bold">
+    <h2 class="my-0 mr-2 font-bold">
         SKILLS
-    </h1>
+    </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <div class="my-3">
@@ -110,16 +110,16 @@
 
 <!-- Professional History -->
 <div class="flex flex-wrap-reverse">
-    <h1 class="text-2xl mr-2 font-bold">
+    <h2 class="my-0 mr-2 font-bold">
         PROFESSIONAL HISTORY
-    </h1>
+    </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <!-- illuria Security, Inc. -->
 <div class="flex justify-between mt-3">
-    <h2 class="text-xl font-bold">
+    <h3 class="font-bold">
         illuria Security, Inc.
-    </h2>
+    </h3>
     <p class="italic">
         full-time
     </p>
@@ -186,9 +186,9 @@
 </div>
 <!-- Khallagh Borhan, Inc. -->
 <div class="flex justify-between mt-3">
-    <h2 class="text-xl font-bold">
+    <h3 class="font-bold">
         Khallagh Borhan, Inc.
-    </h2>
+    </h3>
     <p class="italic">
         full-time
     </p>
@@ -280,9 +280,9 @@
 </div>
 <!-- Bidopin -->
 <div class="flex justify-between mt-3">
-    <h2 class="text-xl font-bold">
+    <h3 class="font-bold">
         Bidopin
-    </h2>
+    </h3>
     <p class="italic">
         full-time
     </p>
@@ -334,9 +334,9 @@
 
 <!-- Volunteer Work -->
 <div class="flex flex-wrap-reverse">
-    <h1 class="text-2xl mr-2 font-bold">
+    <h2 class="my-0 mr-2 font-bold">
         VOLUNTEER WORK
-    </h1>
+    </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <div class="my-3">
