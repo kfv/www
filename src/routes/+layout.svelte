@@ -3,7 +3,7 @@
 </script>
 
 <nav class="border-b border-neutral-800">
-    <div class="my-3 mx-11 sm:mx-24 md:mx-48 xl:mx-96 2xl:mx-[35rem]
+    <div class="my-3 mx-11 sm:mx-24 md:mx-48 lg:mx-64 xl:mx-96 2xl:mx-[35rem]
                 text-neutral-700/80 dark:text-neutral-400">
         <a class="hover:text-black dark:hover:text-neutral-100 duration-500"
            href="/">
@@ -26,7 +26,7 @@
 
 <footer class="border-t border-neutral-800">
     <div class="text-sm text-neutral-400 my-3 mx-11 sm:mx-24 md:mx-48
-                xl:mx-96 2xl:mx-[35rem]">
+                lg:mx-64 xl:mx-96 2xl:mx-[35rem]">
         <p>
             &copy 2023 Faraz Vahedi, CC BY 4.0
         </p>

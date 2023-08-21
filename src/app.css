@@ -10,6 +10,6 @@
 
 @layer components {
     .main {
-        @apply flex-grow my-10 mx-11 sm:mx-24 md:mx-48 xl:mx-96 2xl:mx-[35rem];
+        @apply flex-grow my-10 mx-11 sm:mx-24 md:mx-48 lg:mx-64 xl:mx-96 2xl:mx-[35rem];
     }
 }
