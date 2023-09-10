@@ -2,23 +2,28 @@
     import { onMount } from 'svelte';
     export let sections = [];
 
-    let activeSection = '';
+    let activeSection = sections.length ? sections[0].id : '';
 
     onMount(() => {
         const observer = new IntersectionObserver(
             entries => {
+                let sectionInView = '';
+
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         console.log("Section in view:", entry.target.id);
-                        activeSection = entry.target.id;
+                        console.log("Section in ratio:", entry.intersectionRatio);
+                        sectionInView = entry.target.id;
                     }
                 });
+
+                if (sectionInView) activeSection = sectionInView;
             },
             {
-                // TODO: improvement required (or maybe a new approach)
-                rootMargin: '-50% 0px 0px 0px',
-                threshold: 0.50,
+                rootMargin: '-10% 25% -75% 25%',
+                threshold: 0
             }
+
         );
 
         sections.forEach(section => {
