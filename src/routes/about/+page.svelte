@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>About — Faraz Vahedi</title>
+</svelte:head>
+
 <div class="flex justify-between">
     <h1 class="font-bold">
         Faraz Vahedi

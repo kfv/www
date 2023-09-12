@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Faraz Vahedi (kfv)</title>
+</svelte:head>
+
 <h1>
     Hello, world!
 </h1>

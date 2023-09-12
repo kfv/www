@@ -108,6 +108,9 @@
     `;
 </script>
 
+<svelte:head>
+    <title>Machine Mirage in a Silicon Whisper — Faraz Vahedi</title>
+</svelte:head>
 
 <article>
 

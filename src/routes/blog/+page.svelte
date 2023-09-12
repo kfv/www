@@ -26,6 +26,10 @@
     $: displayedPosts = paginatedItems(posts, currentPage, postsPerPage);
 </script>
 
+<svelte:head>
+    <title>Blog — Faraz Vahedi</title>
+</svelte:head>
+
 <div class="m-auto">
     <ul class="text-lg space-y-2.5">
         {#each displayedPosts as [date, title, description, url]}
