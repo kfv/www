@@ -1,5 +1,10 @@
 <script>
     import "../app.css";
+    import { page } from "$app/stores";
+
+    let gh_repo = "https://github.com/kfv/www/";
+    let gh_path = "edit/main/src/routes";
+    let page_fd = "/+page.svelte";
 </script>
 
 <nav class="border-b border-neutral-800">
@@ -29,6 +34,12 @@
                 lg:mx-64 xl:mx-96 2xl:mx-[35rem]">
         <p>
             &copy 2023 Faraz Vahedi, CC BY 4.0
+            <a href="{gh_repo}{gh_path}{$page.url.pathname}{page_fd}"
+               class="hover:text-black dark:hover:text-neutral-100
+                               duration-500 float-right">
+                edit
+                <i class="ml-2 fa-brands fa-github"></i>
+            </a>
         </p>
     </div>
 </footer>
