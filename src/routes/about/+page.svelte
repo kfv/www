@@ -62,13 +62,16 @@
 </div>
 <div class="my-3">
     <p>
-        Systems Engineer with a comprehensive background in UNIX-like operating
-        systems, compilers, and server-side applications. Experienced in designing,
-        implementing, and maintaining cloud-native applications within large-scale
-        environments. Showcasing a good understanding of CI/CD pipelines,
-        orchestration platforms, and the principles underpinning the DevOps culture.
-        Dedicated to promoting synergy between software development and system
-        operations, focusing on efficiency and systematic innovation.
+        Senior Software Engineer with extensive expertise in C, C++, Rust, and
+        ARM Assembly, specialising in compilers and operating systems.
+        Demonstrated commitment to secure coding standards, architectural
+        design principles, and the consistent delivery of robust, reliable, and
+        efficient software solutions. Driven by challenging projects and aiming
+        to contribute actively to international standard committees, with
+        aspirations to join WG14 and WG21. Passionately working towards making
+        impactful contributions to open source communities, especially the LLVM
+        and Rust projects. Dedicated to continuous growth, knowledge sharing,
+        and pushing the boundaries of software engineering.
     </p>
 </div>
 
@@ -80,42 +83,86 @@
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
 <div class="my-3">
-    <ul class="list-disc list-outside ml-10">
+    <p>
+        Commanding in the realm of system programming, expertise spans across
+        compilers, operating systems, and embedded development. Enriched by a
+        broad spectrum of programming languages and technologies, distinctive
+        traits encompass profound problem-solving insights, leadership prowess,
+        a team orientation, and a precision-focused approach to engineering
+        solutions intertwining threads of reliability, scalability, and
+        efficiency.
+    </p>
+    <ul class="list-disc list-outside ml-10 my-3">
         <li>
-            Accomplished Software Engineer with proficiency in C, C++, Rust, and
-            Swift, alongside considerable experience and familiarity with Python,
-            Lua, Go, Forth, Haskell, and JavaScript.
+            Excel in using C, C++, Rust, and ARM Assembly, with additional
+            hands-on experience in Swift, LISP, Haskell, Python, Go, Java,
+            Kotlin, Fortran, Forth, Ruby, Pascal, JavaScript, and POSIX shell
+            scripts.
         </li>
         <li>
-            Extensive experience with OS-level virtualisation including FreeBSD
-            jails, Solaris Zones, and Docker.
+            Uphold secure coding standards, prioritising clean code, system
+            scalability, high availability, and operational efficiency.
         </li>
         <li>
-            Demonstrating a strong competency in the development of CI/CD
-            pipelines, underpinned by hands-on experience in architecting a CI/CD
-            platform from the ground up.
+            Command a deep understanding and practical expertise in UNIX
+            internals, actively utilising and developing system utilities and
+            kernel modules for BSD (primarily OpenBSD and FreeBSD,) Linux
+            (various distributions including RedHat, SUSE, and Ubuntu,) illumos
+            (OmniOS,) and macOS.
         </li>
         <li>
-            Competent in leveraging orchestration platforms such as Kubernetes
-            for the effective management and scaling of containerised
-            applications.
+            Exhibit adeptness at various Interprocess Communication (IPC)
+            methods from Signals and UNIX Domain Sockets to Network Sockets,
+            Message Queues, and Memory-Mapped Files.
         </li>
         <li>
-            Committed full-stack developer, consistently broadening knowledge
-            across various technology stacks, with adherence to best practices
-            and a focus on software security.
+            Showcase proficiency in socket programming and different event
+            notification mechanisms to address c10k problem, with deep
+            understanding of both connection-oriented and connectionless
+            protocols with hands-on experience developing critically performant
+            client-server applications.
         </li>
         <li>
-            Collaborative team member with a firm grasp of agile methodologies,
-            promoting a shared and iterative approach to project delivery.
+            Possess advanced knowledge and demonstrated expertise in the
+            application and refinement of optimisation techniques, ensuring peak
+            performance and efficiency in diverse software environments.
+        </li>
+        <li>
+            Maintain deep insights into compiler design and adeptly develop
+            frontends for both General Purpose Languages (GPL) and Domain
+            Specific Languages (DSL) on platforms like LLVM.
+        </li>
+        <li>
+            Express good understanding of API architectural styles including
+            SOAP, REST, GraphQL, RPC, and gRPC, with hands-on experience
+            developing RESTful and GraphQL based APIs.
+        </li>
+        <li>
+            Navigate the fields of software development, system architecture,
+            infrastructure management, and release engineering with insight and
+            proficiency.
+        </li>
+        <li>
+            Construct effective CI/CD pipelines, automate testing, and
+            package-building procedures, ensuring seamless and efficient
+            workflows.
+        </li>
+        <li>
+            Exemplify proactive leadership and management, cultivating a dynamic
+            and cooperative atmosphere for technical teams.
+        </li>
+        <li>
+            Emphasise knowledge sharing and collective growth as a dedicated and
+            collaborative team member, contributing positively to team dynamics
+            and project success.
         </li>
     </ul>
 </div>
 
-<!-- Professional History -->
+<!-- Employment History -->
 <div class="flex flex-wrap-reverse">
     <h2 class="my-0 mr-2 font-bold">
-        PROFESSIONAL HISTORY
+        EMPLOYMENT HISTORY
     </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
 </div>
@@ -144,9 +191,9 @@
             elevating system scalability, security, and high availability.
         </li>
         <li>
-            Devised optimal strategies to minimise the impact on network
-            bandwidth and IOPS during concurrent large-scale upgrades of FreeBSD
-            jails, thereby enhancing the efficiency of system updates.
+            Devised optimal strategies to minimise the load on network
+            bandwidth and IOPS during concurrent large-scale upgrades of
+            FreeBSD jails, thereby enhancing the efficiency of system updates.
         </li>
         <li>
             Developed an automated system to create internally customised
@@ -163,10 +210,6 @@
             procedures, whilst maintaining a public package repository for client
             use, facilitating seamless access to the most recent software
             updates.
-        </li>
-        <li>
-            Supervised the maintenance of illuria's open source projects and
-            upstream FreeBSD ports.
         </li>
         <li>
             Engineered a diverse suite of internal applications using Rust (for
@@ -208,13 +251,36 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Rejoined Khallagh's Research & Development team to develop a
-            DDoS Protection system.
+            Rejoined Khallagh's Research & Development team, leading the
+            design and implementation of a customisable DDoS protection suite
+            for the company's CDN services.
         </li>
         <li>
-            Delivered a high-available Network Anomaly Detection platform within
-            a highly-constrained budget using BSD sockets, Berkely-Packet Filter, Netmap,
-            and SQLite API.
+            Engineered a modular system integrating with local services,
+            enabling streamlined and effective threat mitigation while
+            maintaining the integrity of the CDN operations.
+        </li>
+        <li>
+            Led the rapid design, coding, and refinement of the
+            anomaly detection platform amidst tight deadlines; judiciously
+            employed BSD sockets, Berkeley Packet Filter, Netmap, and SQLite
+            API to produce a high-performance but minimal solution within
+            stringent budget and time constraints.
+        </li>
+        <li>
+            Collaborated with interdisciplinary teams, ensuring that the
+            solution was seamlessly integrated with existing infrastructure,
+            optimising overall system security and performance.
+        </li>
+        <li>
+            Successfully met the aggressive three-month project timeline by
+            implementing agile methodologies and close collaboration,
+            delivering the suite on time.
+        </li>
+        <li>
+            Contributed to post-launch optimisations and handed over
+            detailed documentation to ensure smooth integration with future
+            developments, emphasising maintainability and scalability.
         </li>
     </ul>
 </div>
@@ -229,13 +295,15 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Led the engineering team in architecting and delivering regional
-            Kubernetes clusters.
+            Led the design and implementation of the company's PaaS solution,
+            optimising the integration of internal applications while also
+            supporting a broad spectrum of external client applications.
         </li>
         <li>
-            Conducted training sessions for engineering teams on the use of
-            containers, Git Version Control System, and Continuous Integration,
-            Delivery, and Deployment pipelines.
+            Collaborated closely with other teams, offering support in
+            troubleshooting and resolving issues during their migration to the
+            new infrastructure and the development of the public-facing
+            interface.
         </li>
         <li>
             Developed an interactive agentless Kubernetes cluster provisioner and
@@ -264,21 +332,38 @@
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
         <li>
-            Rearchitected the infrastructure of a multimedia streaming platform,
-            boosting overall performance by 80% and achieving 99.9% uptime.
+            Rearchitected the infrastructure of a multimedia streaming
+            platform, boosting overall performance by 80% and achieving 99.9%
+            uptime.
         </li>
         <li>
-            Identified an improper reference model in the application, leading to
-            the resolution of memory leaks and a 75% reduction in memory usage,
-            from 64GB down to 16GB.
+            Identified an improper reference model in the application, leading
+            to the resolution of memory leaks and a 75% reduction in memory
+            usage, from 64GB down to 16GB.
         </li>
         <li>
-            Increased delivery velocity by 70% by introducing Continuous Tests
-            and creating a sustainable Agile culture.
+            Increased delivery velocity by 70% through introducing Continuous
+            Tests and creating a sustainable DevOps culture.
         </li>
         <li>
-            Implemented Distributed Replicated GlusterFS volumes, improving data
-            redundancy and overall system reliability.
+            Employed OS-level virtualisation using LXC/LXD (later transitioned
+            to Docker,) markedly reducing overheads associated with full-weight
+            virtualisation when it was deemed unnecessary.
+        </li>
+        <li>
+            Implemented Distributed Replicated GlusterFS volumes, improving
+            data redundancy and overall system reliability.
+        </li>
+        <li>
+            Collaborated closely with the Security Operations Centre (SOC)
+            department, playing a vital role in penetration testing. This
+            collaboration resulted in actionable insights that significantly
+            bolstered system security.
+        </li>
+        <li>
+            Identified potential vulnerabilities and proposed remediation
+            measures, enhancing the security framework and ensuring compliance
+            with industry best practices.
         </li>
     </ul>
 </div>
@@ -316,8 +401,8 @@
         </li>
         <li>
             Heavily utilised and optimised ZFS filesystem, maximising data
-            integrity and facilitating efficient snapshots, replication, and data
-            compression for effective storage management.
+            integrity and facilitating efficient snapshots, replication, and
+            data compression for effective storage management.
         </li>
         <li>
             Leveraged ZFS deduplication and tiered caching (ARC and L2ARC)
@@ -325,8 +410,9 @@
             availability and fast recovery in large-scale environments.
         </li>
         <li>
-            Developed and managed robust CI/CD pipelines to automate deployments,
-            improve system testing, and speed up the release cycle.
+            Developed and managed robust CI/CD pipelines to automate
+            deployments, improve system testing, and speed up the release
+            cycle.
         </li>
         <li>
             Defined thorough backup and upgrade policies to safeguard
@@ -345,15 +431,6 @@
 </div>
 <div class="my-3">
     <ul class="list-disc list-outside ml-10">
-        <li>
-            Active contributor to the
-            <span class="italic">
-                FreeBSD Project
-            </span> since
-            <span class="italic">
-                June 2019.
-            </span>
-        </li>
         <li>
             Organised
             <span class="italic">
@@ -379,4 +456,17 @@
             from English into Persian.
         </li>
     </ul>
+</div>
+
+<div class="flex flex-wrap-reverse">
+    <h2 class="my-0 mr-2 font-bold">
+        HOBBIES
+    </h2>
+    <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<div class="my-3">
+    <p>
+        Professional Chess Player, Athlete, Café Regular, Bibliophile, Family
+        Person, and Video Gamer.
+    </p>
 </div>
