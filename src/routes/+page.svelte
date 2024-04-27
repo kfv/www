@@ -39,9 +39,10 @@
     Open to Opportunities
 </h3>
 <p>
-    Currently, I am looking for the chance to relocate to Canada, the US,
-    or the UAE. If there are impactful roles in Software, DevOps, or
-    Systems Engineering, I would be more than happy to explore them.
+    I am open to exploring consulring, training, and sponsored open source
+    projects, particularly focused on compilers and UNIX operating systems.
+    Additionally, I am available for remote administration projects,
+    specialising in maintaining site reliability and system uptime.
 </p><br>
 <!-- Contact -->
 <div class="my-3 text-neutral-700/80 dark:text-neutral-400 grid grid-cols-2
