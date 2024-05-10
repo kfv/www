@@ -46,9 +46,9 @@
 
 			// ASCII encoded "Hello, world!\\n" in little-endian format
 			0x6c6c6548,     // "lleH"
-			0x77202c6f,     // "o, w"
-			0x646c726f,     // "orld"
-			0x00000a21      // "!\\n"
+			0x77202c6f,     // "w ,o"
+			0x646c726f,     // "dlro""
+			0x00000a21      // "\\n!"
 		};
 	`;
 
