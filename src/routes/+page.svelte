@@ -39,7 +39,7 @@
     Open to Opportunities
 </h3>
 <p>
-    I am open to exploring consulring, training, and sponsored open source
+    I am open to exploring consulting, training, and sponsored open source
     projects, particularly focused on compilers and UNIX operating systems.
     Additionally, I am available for remote administration projects,
     specialising in maintaining site reliability and system uptime.
