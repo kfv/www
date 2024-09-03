@@ -39,15 +39,15 @@
             </a>
             <a class="mx-3 hover:text-black dark:hover:text-neutral-100
                     duration-500"
-               href="https://twitter.com/__kfv__">
-                <i class="mr-1 sm:mr-2 fa-brands fa-twitter"></i>
-                twitter.com/__kfv__
-            </a>
-            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
-                    duration-500"
                href="https://www.linkedin.com/in/kfv">
                 <i class="mr-1 sm:mr-2 fa-brands fa-linkedin"></i>
                 linkedin.com/in/kfv
+            </a>
+            <a class="mx-3 hover:text-black dark:hover:text-neutral-100
+                    duration-500"
+               href="tel:+989214370485">
+                <i class="mr-1 sm:mr-2 fa-solid fa-phone"></i>
+                +98 921 437 0485
             </a>
         </div>
     </div>
@@ -172,7 +172,7 @@
         SkunkWerks GmbH
     </h3>
     <p class="italic">
-        Contract
+        contract
     </p>
 </div>
 <div class="flex justify-between">
