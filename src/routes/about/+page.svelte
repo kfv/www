@@ -62,16 +62,16 @@
 </div>
 <div class="my-3">
     <p>
-        Senior Software Engineer with extensive expertise in C, C++, Rust, and
-        ARM Assembly, specialising in compilers and operating systems.
-        Demonstrated commitment to secure coding standards, architectural
-        design principles, and the consistent delivery of robust, reliable, and
-        efficient software solutions. Driven by challenging projects and aiming
-        to contribute actively to international standard committees, with
-        aspirations to join WG14 and WG21. Passionately working towards making
-        impactful contributions to open source communities, especially the LLVM
-        and Rust projects. Dedicated to continuous growth, knowledge sharing,
-        and pushing the boundaries of software engineering.
+        Senior Software Engineer with extensive expertise in C, C++, Rust, and ARM
+        Assembly, specialising in compilers and operating systems. Demonstrated
+        commitment to secure coding standards, architectural design principles, and the
+        consistent delivery of robust, reliable, and efficient software solutions.
+        Driven by challenging projects and aiming to contribute actively to
+        international standard committees, with aspirations to join WG14 and WG21.
+        Passionately working towards making impactful contributions to open source
+        communities, especially the LLVM and Rust projects (while being an active
+        contributor to the FreeBSD project.) Dedicated to continuous growth, knowledge
+        sharing, and pushing the boundaries of software engineering.
     </p>
 </div>
 
@@ -106,7 +106,7 @@
         <li>
             Command a deep understanding and practical expertise in UNIX
             internals, actively utilising and developing system utilities and
-            kernel modules for BSD (primarily OpenBSD and FreeBSD,) Linux
+            kernel modules for BSD (primarily FreeBSD and OpenBSD,) Linux
             (various distributions including RedHat, SUSE, and Ubuntu,) illumos
             (OmniOS,) and macOS.
         </li>
@@ -165,6 +165,92 @@
         EMPLOYMENT HISTORY
     </h2>
     <hr class="flex-grow mb-2 border-neutral-800">
+</div>
+<!-- SkunkWerks GmbH -->
+<div class="flex justify-between mt-3">
+    <h3 class="font-bold">
+        SkunkWerks GmbH
+    </h3>
+    <p class="italic">
+        Contract
+    </p>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        Software Engineer
+    </p>
+    <p class="italic">
+        Nov. 2023 - Present
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Designing and implementing a customisable CI/CD runner in C,
+            utilising FreeBSD Jails as the primary OS-level virtualisation
+            provider while focused on expanding support to a wider range of
+            operating systems and virtualisation providers to enhance the
+            flexibility and scalability of the CI/CD system.
+        </li>
+    </ul>
+</div>
+<!-- OMPFinex -->
+<div class="flex justify-between mt-3">
+    <h3 class="font-bold">
+        OMPFinex
+    </h3>
+    <p class="italic">
+        full-time
+    </p>
+</div>
+<div class="flex justify-between">
+    <p class="italic">
+        Site Reliability Engineer / Software Engineer
+    </p>
+    <p class="italic">
+        Nov. 2023 - Present
+    </p>
+</div>
+<div class="my-3">
+    <ul class="list-disc list-outside ml-10">
+        <li>
+            Responsible for system architecture—designing and maintaining robust
+            solutions for a trading and digital exchange platform.
+        </li>
+        <li>
+            Developing and implementing a transaction watcher platform for
+            various blockchain networks, initially focusing on the Solana
+            network.
+        </li>
+        <li>
+            Managing Kubernetes clusters and Mikrotik routers across multiple
+            zones to ensure high availability and reliability.
+        </li>
+        <li>
+            Optimising edge services, CI/CD pipelines, IaC workflows, and
+            monitoring and log management platforms, contributing to the
+            continuous improvement of deployment processes.
+        </li>
+        <li>
+            Developing system and network utilities to facilitate everyday
+            operations, ensuring efficient and reliable workflows.
+        </li>
+        <li>
+            Serving as an on-call member for operations and site reliability,
+            addressing critical issues to maintain seamless platform
+            functionality.
+        </li>
+        <li>
+            Collaborating with cross-functional teams to implement scalable and
+            efficient solutions, driving the company's technical and operational
+            success.
+        </li>
+        <li>
+            Authoring and maintaining RFCs to establish and improve policies and
+            guidelines, fostering better development practices and operational
+            standards.
+        </li>
+    </ul>
 </div>
 <!-- illuria Security, Inc. -->
 <div class="flex justify-between mt-3">
