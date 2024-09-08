@@ -543,16 +543,3 @@
         </li>
     </ul>
 </div>
-
-<div class="flex flex-wrap-reverse">
-    <h2 class="my-0 mr-2 font-bold">
-        HOBBIES
-    </h2>
-    <hr class="flex-grow mb-2 border-neutral-800">
-</div>
-<div class="my-3">
-    <p>
-        Professional Chess Player, Athlete, Café Regular, Bibliophile, Family
-        Person, and Video Gamer.
-    </p>
-</div>
