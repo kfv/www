@@ -1,48 +1,45 @@
 <svelte:head>
-    <title>Faraz Vahedi (kfv)</title>
+    <title>Faraz Vahedi (kfv) | SWE-SRE</title>
 </svelte:head>
 
 <h1>
     Hello, world!
 </h1>
 <p>
-    Welcome to my digital abode. I'm Faraz—an engineer, coder, and dreamer
-    whose mind thrives at the intersection of mathematics and technology.
-    This is where code transforms into tangible solutions, algorithms
-    construct efficiencies, and compilers act as magical incantations,
-    allowing us to converse with machines.
+    I'm a Software Engineer and Site Reliability Engineer specialising in
+    systems programming, compilers, and cloud-native applications. With
+    extensive experience in performance optimisation and scalable architecture,
+    I focus on building robust, efficient solutions to complex technical
+    challenges.
 </p><br>
 <p>
-    With an enduring fondness for our splendid planet, I envision
-    exploring distant galaxies and the boundless opportunities they may
-    harbour.
+    My primary expertise lies in C programming, with strong proficiency in Rust,
+    Go, and C++. While these form the core of my technical toolkit, I maintain
+    an open mindset towards other programming languages and technologies that
+    best serve each project's unique requirements.
 </p><br>
 <p>
-    Programming languages are my tools of trade, whether it's C, C++,
-    Rust, Swift, Go, Haskell, LISP, Python, or something new.
-    If it's a language, you name it, I code it. However, my realm of
-    work extends well beyond mere coding. With a strong foundation in
-    system programming, I am able to design secure, scalable, and
-    efficient digital landscapes. While I'm a UNIX citizen, my
-    journeys take me to various other territories too.
-</p><br>
-<p>
-    My curiosity encompasses a broad spectrum: cloud-native
-    applications, programming language design and compiler
-    development, operating systems, IoT and embedded systems, machine
-    learning, artificial intelligence, DevOps, and the Apple
-    ecosystem. These fields don't merely pique my interest; they are
-    the lifeblood of my ambition, compelling me to innovate, learn,
-    and push the boundaries.
+    As a systems programmer, I specialise in developing secure, scalable, and
+    efficient infrastructure. My experience spans UNIX (and UNIX-like) systems,
+    particularly FreeBSD, where I actively contribute to the community. I'm
+    passionate about software and system architecture, performance optimisation,
+    and building reliable and distributed systems.
 </p><br>
 <h3 class="text-emerald-600 dark:text-emerald-400 my-3">
     Open to Opportunities
 </h3>
 <p>
-    I am open to exploring consulting, training, and sponsored open source
-    projects, particularly focused on compilers and UNIX operating systems.
-    Additionally, I am available for remote administration projects,
-    specialising in maintaining site reliability and system uptime.
+    I am currently seeking opportunities in:
+</p>
+<ul class="list-disc ml-6 my-3">
+    <li>Sponsored open source projects (focused on UNIX operating systems and compilers)</li>
+    <li>Roles in Melbourne, VIC, Australia (with visa sponsorship)</li>
+    <li>Fully remote positions worldwide</li>
+    <li>Consulting and training engagements</li>
+</ul>
+<p>
+    If you have an opportunity that aligns with my expertise or are working on
+    challenging technical projects, I welcome your contact.
 </p><br>
 <!-- Contact -->
 <div class="my-3 text-neutral-700/80 dark:text-neutral-400 grid grid-cols-2
