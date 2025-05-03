@@ -55,11 +55,6 @@
         kfv
     </a>
     <a class="mr-5 hover:text-black dark:hover:text-neutral-100 duration-500"
-       href="https://twitter.com/__kfv__">
-        <i class="mr-1 sm:mr-2 fa-brands fa-twitter"></i>
-        __kfv__
-    </a>
-    <a class="mr-5 hover:text-black dark:hover:text-neutral-100 duration-500"
        href="mailto:kfv@kfv.io">
         <i class="mr-1 sm:mr-2 fa-solid fa-envelope"></i>
         kfv@kfv.io
