@@ -1,4 +1,4 @@
-.PHONY: install dev build preview audit lint format audit clean
+.PHONY: install dev build preview audit lint format audit clean purge
 
 help:
 	@echo "Available commands:"
@@ -57,3 +57,10 @@ clean:
 	rm -rf build/
 	rm -rf .svelte-kit/
 	rm -rf node_modules/.vite/
+
+purge:
+	@echo "Purging all dependencies and build artefacts..."
+	rm -rf build/
+	rm -rf .svelte-kit/
+	rm -rf node_modules/
+	rm -f bun.lock
