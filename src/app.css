@@ -1,15 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@reference "tailwindcss";
 
 @layer base {
-    html {
-        font-family: Roboto, sans-serif;
-    }
+  html {
+    font-family: Roboto, sans-serif;
+  }
 }
 
-@layer components {
-    .main {
-        @apply flex-grow my-10 mx-11 sm:mx-24 md:mx-48 lg:mx-64 xl:mx-96 2xl:mx-[35rem];
-    }
+.main {
+  flex-grow: 1;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
+}
+
+@media (min-width: 640px) {
+  .main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .main {
+    margin-left: 35rem;
+    margin-right: 35rem;
+  }
 }

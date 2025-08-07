@@ -1,70 +1,102 @@
 <script>
-    import { onMount } from 'svelte';
-    export let sections = [];
+  import { onMount } from 'svelte';
+  export let sections = [];
 
-    let activeSection = sections.length ? sections[0].id : '';
+  let activeSection = sections.length ? sections[0].id : '';
 
-    onMount(() => {
-        const observer = new IntersectionObserver(
-            entries => {
-                let sectionInView = '';
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        let sectionInView = '';
 
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        console.log("Section in view:", entry.target.id);
-                        console.log("Section in ratio:", entry.intersectionRatio);
-                        sectionInView = entry.target.id;
-                    }
-                });
-
-                if (sectionInView) activeSection = sectionInView;
-            },
-            {
-                rootMargin: '-10% 25% -75% 25%',
-                threshold: 0
-            }
-
-        );
-
-        sections.forEach(section => {
-            const element = document.getElementById(section.id);
-            if (element) observer.observe(element);
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log('Section in view:', entry.target.id);
+            console.log('Section in ratio:', entry.intersectionRatio);
+            sectionInView = entry.target.id;
+          }
         });
 
-        return () => {
-            sections.forEach(section => {
-                const element = document.getElementById(section.id);
-                if (element) observer.unobserve(element);
-            });
-        };
+        if (sectionInView) activeSection = sectionInView;
+      },
+      {
+        rootMargin: '-10% 25% -75% 25%',
+        threshold: 0,
+      }
+    );
+
+    sections.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
     });
+
+    return () => {
+      sections.forEach(section => {
+        const element = document.getElementById(section.id);
+        if (element) observer.unobserve(element);
+      });
+    };
+  });
 </script>
 
 <div class="toc-sticky-wrapper">
-    <aside class="toc-container">
-        <ul>
-            {#each sections as section}
-                <li>
-                    <a href="#{section.id}" class:active={activeSection === section.id}>
-                        {section.title}
-                    </a>
-                </li>
-            {/each}
-        </ul>
-    </aside>
+  <aside class="toc-container">
+    <ul>
+      {#each sections as section}
+        <li>
+          <a href="#{section.id}" class:active={activeSection === section.id}>
+            {section.title}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </aside>
 </div>
 
-<style lang="postcss">
+<style>
+  .toc-sticky-wrapper {
+    position: sticky;
+    top: 1.25rem;
+  }
+
+  .toc-container {
+    width: 100%;
+    border-left: 1px solid #e5e7eb;
+    padding-left: 1rem;
+    color: #6b7280;
+  }
+
+  .toc-container a {
+    display: block;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    transition: all 0.3s;
+  }
+
+  .toc-container a.active {
+    font-weight: 700;
+    color: #000;
+  }
+
+  /* Medium screens and up */
+  @media (min-width: 768px) {
     .toc-sticky-wrapper {
-        @apply sticky md:top-5;
+      top: 1.25rem;
     }
+
     .toc-container {
-        @apply md:absolute md:-left-40 w-full md:w-40 border-l pl-4 text-neutral-500;
+      position: absolute;
+      left: -10rem;
+      width: 10rem;
     }
-    .toc-container a {
-        @apply block py-1 transition-all duration-300;
-    }
+
     .toc-container a.active {
-        @apply md:font-bold md:dark:text-white md:text-black;
+      color: #000;
     }
+
+    /* Dark mode */
+    :global(.dark) .toc-container a.active {
+      color: #fff;
+    }
+  }
 </style>

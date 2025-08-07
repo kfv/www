@@ -32,7 +32,7 @@ you can contribute:
 2. **Submit a PR**: Feel like diving into the code, patching an
    oversight, or adding something complementary? Submit a PR.
    You can also email me the patch prepared with either
-   *git-format-patch(1)* or *diff(1)* `-ruN`.
+   _git-format-patch(1)_ or _diff(1)_ `-ruN`.
 3. **Spread the Word**: Enjoyed my contents? Share it with friends
    and colleagues. Your support helps me reach a wider audience,
    ergo newer ideas to write about and work on.
