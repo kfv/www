@@ -54,11 +54,6 @@
 </div>
 
 <style>
-  .toc-sticky-wrapper {
-    position: sticky;
-    top: 1.25rem;
-  }
-
   .toc-container {
     width: 100%;
     border-left: 1px solid #e5e7eb;
@@ -85,6 +80,7 @@
   /* Medium screens and up */
   @media (min-width: 768px) {
     .toc-sticky-wrapper {
+      position: sticky;
       top: 1.25rem;
     }
 
