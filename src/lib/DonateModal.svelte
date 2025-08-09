@@ -12,17 +12,6 @@
     dispatch('close');
   }
 
-  function openModal() {
-    setTimeout(() => {
-      const backdrop = document.querySelector(
-        '[role="dialog"][aria-modal="true"]'
-      );
-      if (backdrop) {
-        backdrop.focus();
-      }
-    }, 10);
-  }
-
   function handleBackdropClick(event) {
     if (event.target === event.currentTarget) {
       closeModal();
