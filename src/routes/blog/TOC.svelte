@@ -78,6 +78,10 @@
     color: #000;
   }
 
+  :global(.dark) .toc-container a.active {
+    color: #fff;
+  }
+
   /* Medium screens and up */
   @media (min-width: 768px) {
     .toc-sticky-wrapper {
@@ -92,11 +96,6 @@
 
     .toc-container a.active {
       color: #000;
-    }
-
-    /* Dark mode */
-    :global(.dark) .toc-container a.active {
-      color: #fff;
     }
   }
 </style>
