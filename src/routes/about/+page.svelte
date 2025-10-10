@@ -72,13 +72,14 @@
 </div>
 <div class="my-3">
   <p>
-    Senior Software Engineer specialising in systems programming, operating
-    systems, and site reliability engineering. Core expertise in C, C++, Rust
-    and Go, with deep knowledge of UNIX systems, particularly FreeBSD. Active
-    contributor to open source projects including FreeBSD, with strong focus on
-    performance optimisation, systems architecture, security, and reliable
-    software design. Aspiring to contribute to international standard committees
-    (WG14/WG21) while advancing open source technologies.
+    Senior Software Engineer with deep expertise in operating systems development,
+    compiler tooling, and network programming. Specialising in systems-level C, C++,
+    Rust, and Go development with proven record on performance-critical
+    infrastructure at scale. Active contributor to the
+    <a href="https://www.freebsd.org" class="hover:underline">FreeBSD Project</a>, delivering improvements to
+    core system components, ports, and documentation. Committed to standards
+    compliance whilst actively following programming languages design and
+    implementation across evolving ecosystems.
   </p>
 </div>
 
@@ -88,39 +89,36 @@
   <hr class="flex-grow mb-2 border-neutral-800" />
 </div>
 <div class="my-3">
-  <p>
-    Systems programmer and site reliability engineer with proven expertise in
-    operating systems, distributed systems, and low-level software development.
-    Strong focus on performance, security, reliability, and scalability.
-  </p>
   <ul class="list-disc list-outside ml-10 my-3">
     <li>
-      Expert in C, and proficient in C++, Rust, and Go programming languages,
-      with deep understanding of systems programming and low-level development
+      <strong>Programming Languages:</strong> C and C++ for systems programming,
+      embedded development, and compiler tooling; Rust and Go for systems and
+      backend services.
     </li>
     <li>
-      Adept with FreeBSD and other UNIX-like operating systems including
-      OpenBSD, illumos, Linux, and macOS
+      <strong>Operating Systems:</strong> Deep knowledge of UNIX internals with
+      extensive experience with BSD, illumos, and Linux families in both
+      development and production environments.
     </li>
     <li>
-      Experienced in vulnerability assessment and implementing secure coding
-      practices
+      <strong>Systems Programming:</strong> Socket programming, IPC mechanisms,
+      event notification mechanisms, BPF, Netmap, Netgraph, DTrace, concurrency
+      primitives, sandboxing techniques, and low-level debugging and
+      instrumentation techniques.
     </li>
     <li>
-      Proficient in high-performance socket programming, IPC mechanisms, event
-      notification mechanisms, and concurrency
+      <strong>Virtualisation:</strong> Extensive production experience with both
+      OS-level (FreeBSD jails, illumos zones, OCI-compliant containers) and
+      hardware-level (bhyve, QEMU) virtualisation techniques.
     </li>
     <li>
-      Skilled in designing and implementing reliable distributed systems and
-      scalable infrastructure
+      <strong>Infrastructure:</strong> Automation, orchestration, monitoring,
+      observability, alerting, load balancing, high-availability, vulnerability
+      assessment, and operating systems hardening.
     </li>
     <li>
-      Accomplished in CI/CD automation, containerisation, orchestration, and
-      infrastructure as code (IaC)
-    </li>
-    <li>
-      Masterful in systems optimisation, performance tuning, and reliability
-      engineering
+      <strong>Cloud Platforms:</strong> AWS (EC2, ELB, EKS, ECS, S3, RDS,
+      CloudWatch.)
     </li>
   </ul>
 </div>
@@ -130,9 +128,11 @@
   <h2 class="my-0 mr-2 font-bold">EMPLOYMENT HISTORY</h2>
   <hr class="flex-grow mb-2 border-neutral-800" />
 </div>
-<!-- Add FreeBSD Project -->
+<!-- FreeBSD Project -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">FreeBSD Project</h3>
+  <h3 class="font-bold">
+    <a href="https://www.freebsd.org" class="hover:underline">FreeBSD Project</a>
+  </h3>
   <p class="italic">open source</p>
 </div>
 <div class="flex justify-between">
@@ -142,20 +142,26 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Contribute to the base system focusing on code correctness, performance
-      optimisation, and security
+      Contribute to base system (src) focusing on code correctness,
+      standards compliance, performance optimisation, and security hardening
+      across core components.
     </li>
     <li>
-      Contribute to documentation and manpages to improve user experience and
-      technical clarity
+      Contribute to system documentation and manual pages to improve
+      technical clarity, accuracy, and developer experience.
     </li>
-    <li>Maintain and contribute to several ports</li>
+    <li>
+      Maintain and improve multiple ports, ensuring compatibility and
+      addressing build system issues.
+    </li>
   </ul>
 </div>
 
-<!-- SkunkWerks GmbH -->
+<!-- SkunkWerks -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">SkunkWerks GmbH</h3>
+  <h3 class="font-bold">
+    <a href="https://skunkwerks.at" class="hover:underline">SkunkWerks</a>
+  </h3>
   <p class="italic">contract</p>
 </div>
 <div class="flex justify-between">
@@ -165,39 +171,61 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Developing a secure, customisable, and high-performance CI/CD platform
-      from the ground up
+      Architecting and developing a secure, highly customisable CI/CD
+      platform, optimised for high-performance systems execution and adaptable
+      across diverse OS-level virtualisation environments, enabling robust and
+      scalable core pipeline operations.
     </li>
   </ul>
 </div>
 <!-- OMPFinex -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">OMPFinex</h3>
+  <h3 class="font-bold">
+    <a href="https://www.ompfinex.com" class="hover:underline">OMPFinex</a>
+  </h3>
   <p class="italic">full-time</p>
 </div>
 <div class="flex justify-between">
-  <p class="italic">Site Reliability Engineer / Software Engineer</p>
+  <p class="italic">Software Engineer, Site Reliability Engineer</p>
   <p class="italic">Nov. 2023 - Present</p>
 </div>
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
-    <li>Contributing to system architecture and infrastructure design</li>
-    <li>Developing blockchain transaction monitoring systems in Go and Rust</li>
     <li>
-      Managing multi-zone Kubernetes clusters for high availability
-      infrastructure
+      Architected and delivered operator-centric CRM backend and
+      multi-channel notification system in Go, processing millions of requests
+      daily with deep integration to external platforms and identity services.
     </li>
-    <li>Developing critical system utilities for operational efficiency</li>
     <li>
-      Performing code reviews and parttaking in software architecture
-      discussions
+      Contributed to development of high-throughput blockchain transaction
+      monitoring systems in Go, processing and analysing real-time data streams
+      for trading platform operations.
     </li>
-    <li>Participating in on-call rotation to ensure 24/7 system reliability</li>
+    <li>
+      Designed and implemented critical system utilities in C, Rust, and Go,
+      for operational workflows, monitoring, and low-level system integration.
+    </li>
+    <li>
+      Managed multi-zone Kubernetes clusters across multiple cloud
+      providers, ensuring high-availability with automated failover and
+      load balancing.
+    </li>
+    <li>
+      Led architectural design discussions and code reviews, establishing
+      standards for code quality, style, security, and maintainability.
+    </li>
+    <li>
+      Mentored Go team developers and conducted technical interviews,
+      contributing to hiring decisions, onboarding new employees, and uplifting
+      engineering culture and standards.
+    </li>
   </ul>
 </div>
-<!-- illuria Security, Inc. -->
+<!-- illuria Security -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">illuria Security, Inc.</h3>
+  <h3 class="font-bold">
+    <a href="https://illuria.com" class="hover:underline">illuria Security</a>
+  </h3>
   <p class="italic">full-time</p>
 </div>
 <div class="flex justify-between">
@@ -207,25 +235,32 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Led infrastructure and release engineering, focusing on system scalability
-      and reliability
+      Led infrastructure and release engineering teams, architecting
+      deployment systems for customer environments with focus on reproducibility and
+      zero-trust principles.
     </li>
     <li>
-      Developed automated FreeBSD distribution system and custom package
-      repository
+      Engineered automated FreeBSD distribution build system with custom
+      package repository and delivery pipelines.
     </li>
     <li>
-      Built system utilities and monitoring tools using Rust, C, and DTrace
+      Developed performance monitoring and system utilities in C and Rust,
+      leveraging DTrace for deep system observability and bottleneck analysis.
     </li>
     <li>
-      Implemented comprehensive CI/CD pipelines and testing infrastructure
+      Architected and deployed comprehensive CI/CD pipelines with security
+      scanning, automated end-to-end testing, progressive rollout strategies, and
+      heavily customised execution environment.
     </li>
-    <li>Optimised large-scale FreeBSD jail deployments and updates</li>
+    <li>
+      Optimised large-scale FreeBSD jail orchestration, improving update
+      efficiency and deployment speed.
+    </li>
   </ul>
 </div>
-<!-- Khallagh Borhan, Inc. -->
+<!-- Khallagh Borhan -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">Khallagh Borhan, Inc.</h3>
+  <h3 class="font-bold">Khallagh Borhan</h3>
   <p class="italic">full-time</p>
 </div>
 <div class="flex justify-between">
@@ -235,14 +270,17 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Designed and implemented high-performance DDoS protection system using C++
+      Architected and implemented high-performance DDoS mitigation system
+      in C++, providing real-time traffic analysis and automated threat response.
     </li>
     <li>
-      Developed network monitoring solution using Berkeley Packet Filter and
-      Netmap in C
+      Developed kernel-level network monitoring solution using Berkeley
+      Packet Filter (BPF) and Netmap framework in C, achieving line-rate packet
+      processing.
     </li>
     <li>
-      Optimised system performance while maintaining reliability and security
+      Optimised network stack and application performance through profiling
+      and systems-level tuning whilst ensuring security and reliability.
     </li>
   </ul>
 </div>
@@ -252,47 +290,80 @@
 </div>
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
-    <li>Architected and implemented company's PaaS solution</li>
-    <li>Developed Kubernetes cluster management tools</li>
-    <li>Reduced deployment times through CI/CD optimisation</li>
+    <li>
+      Architected and delivered Platform-as-a-Service (PaaS) solution,
+      enabling both internal teams and customers to rapidly deploy and scale
+      applications.
+    </li>
+    <li>
+      Developed custom Kubernetes cluster management and automation tools,
+      streamlining operations and reducing manual intervention.
+    </li>
+    <li>
+      Reduced deployment times by 70% through CI/CD pipeline optimisation
+      and intelligent caching strategies, eliminating vendor lock-in and enabling
+      faster and more reliable deployments.
+    </li>
+    <li>
+      Improved performance of a public video streaming platform by 80%
+      through complete infrastructure redesign, architectural optimisation, and
+      refactoring of legacy Java code.
+    </li>
+    <li>
+      Identified and resolved critical memory leaks in core services,
+      reducing memory footprint by 75% and eliminating cascading failures.
+    </li>
+    <li>
+      Utilised OS-level virtualisation techniques with distributed storage
+      backend, improving deployment flexibility and resource utilisation.
+    </li>
+    <li>
+      Contributed to the internal Infrastructure-as-a-Service (IaaS) and 
+      Content Delivery Network (CDN) solutions, diagnosing and resolving complex
+      system-level issues, improving system availability and reliability.
+    </li>
   </ul>
 </div>
-<div class="flex justify-between">
-  <p class="italic">System Architect, Site Reliability Engineer</p>
-  <p class="italic">Sept. 2016 - Dec. 2018</p>
-</div>
-<div class="my-3">
-  <ul class="list-disc list-outside ml-10">
-    <li>
-      Improved streaming platform performance by 80% through infrastructure
-      optimisation and complete redesign
-    </li>
-    <li>Resolved critical memory leaks, reducing memory usage by 75%</li>
-    <li>
-      Implemented container-based virtualisation and distributed storage
-      solutions
-    </li>
-    <li>
-      Contributed to company's IaaS solution and debugging critical system
-      issues
-    </li>
-    <li>Contributed to the internal CDN solution and its implementation</li>
-  </ul>
-</div>
-<!-- Bidopin -->
+<!-- Emersun -->
 <div class="flex justify-between mt-3">
-  <h3 class="font-bold">Bidopin</h3>
+  <h3 class="font-bold">
+    <a href="https://emersun.com" class="hover:underline">Emersun</a>
+  </h3>
   <p class="italic">full-time</p>
 </div>
 <div class="flex justify-between">
-  <p class="italic">DevOps Engineer</p>
+  <p class="italic">Software Engineer, Site Reliability Engineer</p>
   <p class="italic">Dec. 2017 - Mar. 2019</p>
 </div>
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
-    <li>Designed high-availability infrastructure using FreeBSD jails</li>
-    <li>Optimised ZFS storage systems with deduplication and tiered caching</li>
-    <li>Implemented automated deployment pipelines and backup systems</li>
+    <li>
+      Architected and built complete production infrastructure from scratch
+      using FreeBSD jails, bhyve, and ZFS, with focus on security, scalability,
+      and operational sustainability.
+    </li>
+    <li>
+      Automated large-scale, declarative infrastructure and service
+      orchestration with Terraform and Nomad, facilitating infrastructure
+      management and service deployment at scale.
+    </li>
+    <li>
+      Engineered comprehensive monitoring, alerting, and observability
+      systems with custom tooling, providing real-time visibility into system
+      health, performance metrics, and capacity planning.
+    </li>
+    <li>
+      Optimised ZFS storage subsystem with deduplication, compression, and
+      L2ARC/ZIL tiered caching, improving I/O throughput by 40%.
+    </li>
+    <li>
+      Contributed to Java application codebase and database design,
+      collaborating with development team on architectural decisions.
+    </li>
+    <li>
+      Mentored engineering team members and participated in technical
+      hiring, evaluating candidates and contributing to team growth.
+    </li>
   </ul>
 </div>
 
@@ -305,18 +376,13 @@
   <ul class="list-disc list-outside ml-10">
     <li>
       Organised
-      <span class="italic"> Iran BSD User Group (IRBUG) </span>
-      from
-      <span class="italic"> April 2019 </span>
-      to
-      <span class="italic"> January 2021. </span>
-      Initiated regular workshops and monthly meetings to foster knowledge sharing
-      and collaboration among members.
+      <span class="italic">Iran BSD User Group (IRBUG)</span>
+      (<span class="italic">April 2019</span>-<span class="italic">January 2021</span>)
     </li>
     <li>
       Translated
-      <span class="italic"> HTTP3-Explained </span>
-      from English into Persian.
+      <span class="italic">HTTP3-Explained</span>
+      to Persian
     </li>
   </ul>
 </div>
