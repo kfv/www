@@ -4,25 +4,24 @@
 
 <h1>Hello, world!</h1>
 <p>
-  I'm a Software Engineer and Site Reliability Engineer specialising in systems
-  programming, compilers, and cloud-native applications. With extensive
-  experience in performance optimisation and scalable architecture, I focus on
-  building robust, efficient solutions to complex technical challenges.
+  I'm a software engineer working at the intersection of systems programming,
+  compilers, and large-scale infrastructure — where software meets the metal.
 </p>
 <br />
 <p>
-  My primary expertise lies in C programming, with strong proficiency in Rust,
-  Go, and C++. While these form the core of my technical toolkit, I maintain an
-  open mindset towards other programming languages and technologies that best
-  serve each project's unique requirements.
+  My work centres on the design and implementation of clean, performant, and
+  enduring systems. From kernel internals to distributed services, I build
+  software that balances precision with practicality, and simplicity with
+  scalability.
 </p>
 <br />
 <p>
-  As a systems programmer, I specialise in developing secure, scalable, and
-  efficient infrastructure. My experience spans UNIX (and UNIX-like) systems,
-  particularly FreeBSD, where I actively contribute to the community. I'm
-  passionate about software and system architecture, performance optimisation,
-  and building reliable and distributed systems.
+  I write primarily in C, with strong proficiency in Rust, Go, and C++. My
+  experience with operating systems spans UNIX-like systems — particularly
+  FreeBSD, where I actively contribute to the community. I'm deeply interested
+  in systems architecture, runtime tooling, and performance engineering —
+  ensuring that the systems we build today remain observable, secure, and
+  maintainable tomorrow.
 </p>
 <br />
 <h3 class="text-emerald-600 dark:text-emerald-400 my-3">
