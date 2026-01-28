@@ -33,6 +33,7 @@
   },
   "type": "module",
   "dependencies": {
+    "qr-code-styling": "^1.9.2",
     "qrcode": "^1.5.4",
     "tailwindcss": "^4.1.11"
   },

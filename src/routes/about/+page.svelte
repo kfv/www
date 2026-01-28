@@ -56,10 +56,10 @@
       <a
         class="mx-3 hover:text-black dark:hover:text-neutral-100
                     duration-500"
-        href="tel:+989214370485"
+        href="tel:+989912941507"
       >
         <i class="mr-1 sm:mr-2 fa-solid fa-phone"></i>
-        +98 921 437 0485
+        +98 991 294 1507
       </a>
     </div>
   </div>
@@ -74,11 +74,11 @@
   <p>
     Senior Software Engineer with deep expertise in operating systems development,
     compiler tooling, and network programming. Specialising in systems-level C, C++,
-    Rust, and Go development with proven record on performance-critical
+    Rust, and Go development with proven record in performance-critical
     infrastructure at scale. Active contributor to the
     <a href="https://www.freebsd.org" class="hover:underline">FreeBSD Project</a>, delivering improvements to
     core system components, ports, and documentation. Committed to standards
-    compliance whilst actively following programming languages design and
+    compliance whilst actively following programming language design and
     implementation across evolving ecosystems.
   </p>
 </div>
@@ -92,29 +92,28 @@
   <ul class="list-disc list-outside ml-10 my-3">
     <li>
       <strong>Programming Languages:</strong> C and C++ for systems programming,
-      embedded development, and compiler tooling; Rust and Go for systems and
-      backend services.
+      embedded development, and compiler/toolchain engineering; Rust and Go for
+      high-performance systems and backend services.
     </li>
     <li>
-      <strong>Operating Systems:</strong> Deep knowledge of UNIX internals with
-      extensive experience with BSD, illumos, and Linux families in both
-      development and production environments.
+      <strong>Operating Systems:</strong> Advanced understanding of UNIX internals
+      with production and development experience across BSD, illumos, and Linux
+      families.
     </li>
     <li>
-      <strong>Systems Programming:</strong> Socket programming, IPC mechanisms,
-      event notification mechanisms, BPF, Netmap, Netgraph, DTrace, concurrency
-      primitives, sandboxing techniques, and low-level debugging and
-      instrumentation techniques.
+      <strong>Systems Programming:</strong> Socket programming, IPC, event
+      notifications mechanisms, BPF, Netmap, Netgraph, DTrace, concurrency
+      primitives, sandboxing, and low-level debugging and instrumentation.
     </li>
     <li>
-      <strong>Virtualisation:</strong> Extensive production experience with both
-      OS-level (FreeBSD jails, illumos zones, OCI-compliant containers) and
-      hardware-level (bhyve, QEMU) virtualisation techniques.
+      <strong>Virtualisation:</strong> Production experience with OS-level (FreeBSD
+      jails, illumos zones, OCI containers) and hardware-level (bhyve, QEMU)
+      virtualisation.
     </li>
     <li>
-      <strong>Infrastructure:</strong> Automation, orchestration, monitoring,
-      observability, alerting, load balancing, high-availability, vulnerability
-      assessment, and operating systems hardening.
+      <strong>Infrastructure:</strong> Infrastructure automation, orchestration,
+      monitoring, observability, alerting, high availability, vulnerability
+      assessment, and OS hardening.
     </li>
     <li>
       <strong>Cloud Platforms:</strong> AWS (EC2, ELB, EKS, ECS, S3, RDS,
@@ -123,9 +122,9 @@
   </ul>
 </div>
 
-<!-- Employment History -->
+<!-- Projects -->
 <div class="flex flex-wrap-reverse">
-  <h2 class="my-0 mr-2 font-bold">EMPLOYMENT HISTORY</h2>
+  <h2 class="my-0 mr-2 font-bold">PROJECTS</h2>
   <hr class="flex-grow mb-2 border-neutral-800" />
 </div>
 <!-- FreeBSD Project -->
@@ -137,12 +136,12 @@
 </div>
 <div class="flex justify-between">
   <p class="italic">Src and Ports Contributor</p>
-  <p class="italic">Jan. 2021 - Present</p>
+  <p class="italic">Apr. 2021 - Present</p>
 </div>
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Contribute to base system (src) focusing on code correctness,
+      Contribute to the base system (src) focusing on code correctness,
       standards compliance, performance optimisation, and security hardening
       across core components.
     </li>
@@ -157,6 +156,11 @@
   </ul>
 </div>
 
+<!-- Employment History -->
+<div class="flex flex-wrap-reverse">
+  <h2 class="my-0 mr-2 font-bold">EMPLOYMENT HISTORY</h2>
+  <hr class="flex-grow mb-2 border-neutral-800" />
+</div>
 <!-- SkunkWerks -->
 <div class="flex justify-between mt-3">
   <h3 class="font-bold">
@@ -171,10 +175,10 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Architecting and developing a secure, highly customisable CI/CD
-      platform, optimised for high-performance systems execution and adaptable
-      across diverse OS-level virtualisation environments, enabling robust and
-      scalable core pipeline operations.
+      Developing a secure, highly customisable CI/CD platform optimised
+      for high-performance workloads and adaptable across diverse OS-level
+      virtualisation environments, enabling scalable and resilient pipeline
+      execution.
     </li>
   </ul>
 </div>
@@ -192,32 +196,35 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Architected and delivered operator-centric CRM backend and
-      multi-channel notification system in Go, processing millions of requests
-      daily with deep integration to external platforms and identity services.
+      Refactored, optimised, and developed a high-performance, scalable,
+      and secure authentication and authorisation system.
     </li>
     <li>
-      Contributed to development of high-throughput blockchain transaction
-      monitoring systems in Go, processing and analysing real-time data streams
-      for trading platform operations.
+      Designed a multi-channel notification platform processing millions of
+      requests daily with deep integration to external platforms.
     </li>
     <li>
-      Designed and implemented critical system utilities in C, Rust, and Go,
-      for operational workflows, monitoring, and low-level system integration.
+      Designed and developed an operator-centric CRM software with a focus
+      on integration capability with external platforms, efficiency, and
+      extensibility per se.
+    </li>
+    <li>
+      Contributed to the development of high-throughput blockchain
+      transaction monitoring systems processing and analysing real-time data
+      streams on the supported blockchain networks.
+    </li>
+    <li>
+      Developed critical system utilities in C, Rust, and Go for operational
+      workflows, monitoring, and low-level system integration.
     </li>
     <li>
       Managed multi-zone Kubernetes clusters across multiple cloud
-      providers, ensuring high-availability with automated failover and
+      providers, ensuring high availability with automated failover and
       load balancing.
     </li>
     <li>
-      Led architectural design discussions and code reviews, establishing
-      standards for code quality, style, security, and maintainability.
-    </li>
-    <li>
-      Mentored Go team developers and conducted technical interviews,
-      contributing to hiring decisions, onboarding new employees, and uplifting
-      engineering culture and standards.
+      Mentored Go team developers, conducted technical interviews,
+      and contributed to hiring decisions and onboarding processes.
     </li>
   </ul>
 </div>
@@ -236,8 +243,8 @@
   <ul class="list-disc list-outside ml-10">
     <li>
       Led infrastructure and release engineering teams, architecting
-      deployment systems for customer environments with focus on reproducibility and
-      zero-trust principles.
+      deployment systems for customer environments with a focus on reproducibility
+      and zero-trust principles.
     </li>
     <li>
       Engineered automated FreeBSD distribution build system with custom
@@ -248,12 +255,12 @@
       leveraging DTrace for deep system observability and bottleneck analysis.
     </li>
     <li>
-      Architected and deployed comprehensive CI/CD pipelines with security
-      scanning, automated end-to-end testing, progressive rollout strategies, and
-      heavily customised execution environment.
+      Developed comprehensive CI/CD pipelines with automated end-to-end
+      testing and security scanning, progressive rollout strategies, and fully
+      customisable build, execution, and delivery environments.
     </li>
     <li>
-      Optimised large-scale FreeBSD jail orchestration, improving update
+      Optimised large-scale FreeBSD jails orchestration, improving update
       efficiency and deployment speed.
     </li>
   </ul>
@@ -270,7 +277,7 @@
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Architected and implemented high-performance DDoS mitigation system
+      Developed a high-performance DDoS mitigation system
       in C++, providing real-time traffic analysis and automated threat response.
     </li>
     <li>
@@ -280,18 +287,19 @@
     </li>
     <li>
       Optimised network stack and application performance through profiling
-      and systems-level tuning whilst ensuring security and reliability.
+      and systems-level tuning.
     </li>
   </ul>
 </div>
 <div class="flex justify-between">
   <p class="italic">Software Engineer, Site Reliability Engineer</p>
-  <p class="italic">Jan. 2019 - Feb. 2021</p>
+  <p class="italic">Jan. 2016 - Feb. 2021</p>
 </div>
 <div class="my-3">
   <ul class="list-disc list-outside ml-10">
     <li>
-      Architected and delivered Platform-as-a-Service (PaaS) solution,
+      Architected and delivered a public Platform-as-a-Service (PaaS)
+      solution,
       enabling both internal teams and customers to rapidly deploy and scale
       applications.
     </li>
@@ -318,7 +326,7 @@
       backend, improving deployment flexibility and resource utilisation.
     </li>
     <li>
-      Contributed to the internal Infrastructure-as-a-Service (IaaS) and 
+      Contributed to the internal Infrastructure-as-a-Service (IaaS) and
       Content Delivery Network (CDN) solutions, diagnosing and resolving complex
       system-level issues, improving system availability and reliability.
     </li>
@@ -339,7 +347,7 @@
   <ul class="list-disc list-outside ml-10">
     <li>
       Architected and built complete production infrastructure from scratch
-      using FreeBSD jails, bhyve, and ZFS, with focus on security, scalability,
+      using FreeBSD jails, bhyve, and ZFS, with a focus on security, scalability,
       and operational sustainability.
     </li>
     <li>
@@ -366,6 +374,29 @@
     </li>
   </ul>
 </div>
+<!-- APR -->
+<div class="flex justify-between mt-3">
+  <h3 class="font-bold">APR</h3>
+  <p class="italic">part-time</p>
+</div>
+<div class="flex justify-between">
+  <p class="italic">Software Developer</p>
+  <p class="italic">Jan. 2013 - Dec. 2015</p>
+</div>
+<div class="my-3">
+  <ul class="list-disc list-outside ml-10">
+    <li>
+      Contributed to several Ruby, PHP, and Java applications.
+    </li>
+    <li>
+      Designed and developed a fitness-first social application in
+      Objective-C.
+    </li>
+    <li>
+      Administered and maintained multiple servers and virtual machines.
+    </li>
+  </ul>
+</div>
 
 <!-- Volunteer Work -->
 <div class="flex flex-wrap-reverse">
@@ -377,7 +408,7 @@
     <li>
       Organised
       <span class="italic">Iran BSD User Group (IRBUG)</span>
-      (<span class="italic">April 2019</span>-<span class="italic">January 2021</span>)
+      (<span class="italic">April 2019</span>–<span class="italic">January 2021</span>)
     </li>
     <li>
       Translated
