@@ -56,13 +56,22 @@
 
   async function generateQRCode(address, walletName) {
     try {
+      const isDarkMode =
+        typeof document !== 'undefined' &&
+        document.documentElement.classList.contains('dark');
+
       const qrDataURL = await QRCode.toDataURL(address, {
         width: 200,
         margin: 2,
-        color: {
-          dark: '#000000',
-          light: '#ffffff',
-        },
+        color: isDarkMode
+          ? {
+              dark: '#ffffff',
+              light: '#000000',
+            }
+          : {
+              dark: '#000000',
+              light: '#ffffff',
+            },
       });
       return qrDataURL;
     } catch (err) {
