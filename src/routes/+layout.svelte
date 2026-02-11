@@ -135,7 +135,7 @@
                 lg:mx-64 xl:mx-96 2xl:mx-[35rem]"
   >
     <p>
-      &copy 2023 Faraz Vahedi, CC BY 4.0
+      &copy 2019-2026 Faraz Vahedi, CC BY 4.0
       <a
         href="{gh_repo}{gh_path}{$page.url.pathname}{page_fd}"
         class="hover:text-black dark:hover:text-neutral-100
