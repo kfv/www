@@ -1,40 +1,65 @@
 <script>
   import { onMount } from 'svelte';
+
   export let sections = [];
 
   let activeSection = sections.length ? sections[0].id : '';
 
+  const TRIGGER_OFFSET_PX = 120;
+  const TRIGGER_RATIO = 0.2;
+
+  function getTriggerLine() {
+    if (typeof window === 'undefined') return 0;
+    const max = window.innerHeight * TRIGGER_RATIO;
+    return Math.min(TRIGGER_OFFSET_PX, max);
+  }
+
+  function computeActiveSection() {
+    if (!sections.length) return;
+
+    const trigger = getTriggerLine();
+    const elements = sections
+      .map((s) => ({ id: s.id, el: document.getElementById(s.id) }))
+      .filter(({ el }) => el);
+
+    if (elements.length === 0) return;
+
+    const last = elements[elements.length - 1];
+    const lastRect = last.el.getBoundingClientRect();
+    const viewportBottom = window.innerHeight;
+
+    if (lastRect.bottom <= viewportBottom + 1) {
+      activeSection = last.id;
+      return;
+    }
+
+    let active = elements[0].id;
+    for (const { id, el } of elements) {
+      const top = el.getBoundingClientRect().top;
+      if (top <= trigger) active = id;
+    }
+    activeSection = active;
+  }
+
   onMount(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        let sectionInView = '';
+    let rafId = null;
 
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            console.log('Section in view:', entry.target.id);
-            console.log('Section in ratio:', entry.intersectionRatio);
-            sectionInView = entry.target.id;
-          }
-        });
+    const onScroll = () => {
+      if (rafId !== null) return;
+      rafId = requestAnimationFrame(() => {
+        computeActiveSection();
+        rafId = null;
+      });
+    };
 
-        if (sectionInView) activeSection = sectionInView;
-      },
-      {
-        rootMargin: '-10% 25% -75% 25%',
-        threshold: 0,
-      }
-    );
-
-    sections.forEach(section => {
-      const element = document.getElementById(section.id);
-      if (element) observer.observe(element);
-    });
+    requestAnimationFrame(() => computeActiveSection());
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
 
     return () => {
-      sections.forEach(section => {
-        const element = document.getElementById(section.id);
-        if (element) observer.unobserve(element);
-      });
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (rafId !== null) cancelAnimationFrame(rafId);
     };
   });
 </script>
