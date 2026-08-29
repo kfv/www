@@ -1,0 +1,14 @@
+.code-block {
+  border: 1px solid #52525b;
+  border-radius: 0.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.code-block code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

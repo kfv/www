@@ -1,5 +1,7 @@
 <script>
   import { fade } from 'svelte/transition';
+  import './CodeBlock.css';
+
   export let code = '';
   let copied = false;
 
@@ -35,21 +37,3 @@
     <pre><code>{code}</code></pre>
   </div>
 </div>
-
-<style>
-  .code-block {
-    border: 1px solid #52525b;
-    border-radius: 0.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
-    position: relative;
-  }
-  .code-block code {
-    font-family:
-      ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono',
-      Menlo, monospace;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-</style>

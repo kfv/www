@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import './GaussianWell.css';
 
   let well;
 
@@ -111,61 +112,3 @@
 </script>
 
 <div class="well" bind:this={well} aria-hidden="true"></div>
-
-<style>
-  .well {
-    display: none;
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    .well {
-      display: block;
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      visibility: hidden;
-      background-image: radial-gradient(
-        circle,
-        rgb(255 255 255 / 0.7) 0.6px,
-        transparent 0.7px
-      );
-      background-size: 28px 28px;
-      background-attachment: fixed;
-      mask-image: radial-gradient(
-        16rem circle at var(--well-x, 50%) var(--well-y, 20%),
-        rgb(0 0 0 / 1) 0%,
-        rgb(0 0 0 / 0.72) 22%,
-        rgb(0 0 0 / 0.38) 44%,
-        rgb(0 0 0 / 0.14) 66%,
-        rgb(0 0 0 / 0.03) 84%,
-        transparent 100%
-      );
-      -webkit-mask-image: radial-gradient(
-        16rem circle at var(--well-x, 50%) var(--well-y, 20%),
-        rgb(0 0 0 / 1) 0%,
-        rgb(0 0 0 / 0.72) 22%,
-        rgb(0 0 0 / 0.38) 44%,
-        rgb(0 0 0 / 0.14) 66%,
-        rgb(0 0 0 / 0.03) 84%,
-        transparent 100%
-      );
-      mask-repeat: no-repeat;
-      -webkit-mask-repeat: no-repeat;
-      mask-size: 100% 100%;
-      -webkit-mask-size: 100% 100%;
-      mask-position: 0 0;
-      -webkit-mask-position: 0 0;
-    }
-
-    .well:global(.on) {
-      visibility: visible;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .well {
-      display: none;
-    }
-  }
-</style>

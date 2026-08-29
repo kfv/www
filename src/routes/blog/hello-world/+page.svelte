@@ -1,6 +1,6 @@
 <script>
-  import TOC from '../TOC.svelte';
-  import CodeBlock from '../CodeBlock.svelte';
+  import TOC from '$lib/blog/TOC.svelte';
+  import CodeBlock from '$lib/ui/CodeBlock.svelte';
   import { dedent } from '$lib/code-block.js';
 
   let sections = [

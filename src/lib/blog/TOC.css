@@ -1,0 +1,31 @@
+.toc-container {
+  width: 100%;
+  border-left: 1px solid var(--line);
+  padding-left: 1rem;
+  color: #6b7280;
+}
+
+.toc-container a {
+  display: block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  transition: all 0.3s;
+}
+
+.toc-container a.active {
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 1280px) {
+  .toc-sticky-wrapper {
+    position: sticky;
+    top: 1.25rem;
+  }
+
+  .toc-container {
+    position: absolute;
+    left: -10rem;
+    width: 10rem;
+  }
+}

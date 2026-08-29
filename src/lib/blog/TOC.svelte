@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import './TOC.css';
 
   export let sections = [];
 
@@ -19,7 +20,7 @@
 
     const trigger = getTriggerLine();
     const elements = sections
-      .map((s) => ({ id: s.id, el: document.getElementById(s.id) }))
+      .map(s => ({ id: s.id, el: document.getElementById(s.id) }))
       .filter(({ el }) => el);
 
     if (elements.length === 0) return;
@@ -77,41 +78,3 @@
     </ul>
   </aside>
 </div>
-
-<style>
-  .toc-container {
-    width: 100%;
-    border-left: 1px solid rgb(38 38 38);
-    padding-left: 1rem;
-    color: #6b7280;
-  }
-
-  .toc-container a {
-    display: block;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    transition: all 0.3s;
-  }
-
-  .toc-container a.active {
-    font-weight: 700;
-    color: #fff;
-  }
-
-  :global(.dark) .toc-container a.active {
-    color: #fff;
-  }
-
-  @media (min-width: 1280px) {
-    .toc-sticky-wrapper {
-      position: sticky;
-      top: 1.25rem;
-    }
-
-    .toc-container {
-      position: absolute;
-      left: -10rem;
-      width: 10rem;
-    }
-  }
-</style>

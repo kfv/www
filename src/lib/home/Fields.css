@@ -1,0 +1,48 @@
+.home-fields {
+  display: grid;
+  gap: 1.75rem;
+  margin: 0 0 3.25rem;
+}
+
+.home-field {
+  --stage-delay: calc(0.62s + var(--i, 0) * 80ms);
+}
+
+.home-field-name {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color: var(--ink);
+}
+
+.home-basis {
+  display: inline-block;
+  min-width: 1.55rem;
+  margin-right: 0.35rem;
+  letter-spacing: 0.02em;
+  color: var(--faint);
+}
+
+.home-basis sub {
+  font-size: 0.72em;
+  font-variant-position: sub;
+}
+
+@media (min-width: 640px) {
+  .home-fields {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .home-field {
+    padding-right: 1.25rem;
+  }
+
+  .home-field + .home-field {
+    padding-left: 1.35rem;
+    padding-right: 0;
+    border-left: 1px solid var(--line);
+  }
+}

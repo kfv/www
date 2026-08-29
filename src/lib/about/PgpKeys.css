@@ -1,0 +1,36 @@
+.pgp-keys-item + .pgp-keys-item {
+  margin-top: 0.85rem;
+}
+
+.pgp-keys-fingerprint {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  white-space: pre-wrap;
+  color: var(--mute);
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.pgp-keys-fingerprint:hover,
+.pgp-keys-fingerprint[aria-expanded='true'] {
+  color: var(--ink);
+}
+
+.pgp-keys-note {
+  margin-left: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--dim);
+}
+
+.pgp-keys .code-block {
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+}

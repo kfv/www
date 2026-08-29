@@ -1,0 +1,57 @@
+.home-mast {
+  margin-bottom: 3.5rem;
+}
+
+.home-axes {
+  display: block;
+  margin-bottom: 1.15rem;
+  color: var(--faint);
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+.home-axes path.stage-draw {
+  transition:
+    stroke 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.home-axes path.stage-draw:nth-of-type(2) {
+  animation-delay: 80ms;
+}
+
+.home-axes path.stage-draw:nth-of-type(3) {
+  animation-delay: 160ms;
+}
+
+.home-axes .home-origin {
+  --stage-delay: 0.42s;
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.home-wordmark {
+  margin: 0;
+  font-size: clamp(2.35rem, 6vw, 3.15rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  --stage-delay: 0.38s;
+}
+
+.home-product {
+  margin: 0.85rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--mute);
+  --stage-delay: 0.5s;
+}
+
+.home-factor {
+  transition:
+    color 0.5s ease,
+    opacity 0.5s ease;
+}

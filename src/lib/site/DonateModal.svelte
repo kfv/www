@@ -3,6 +3,7 @@
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   import QRCode from 'qrcode';
+  import './DonateModal.css';
 
   export let isOpen = false;
 
@@ -317,13 +318,3 @@
     </div>
   {/if}
 {/if}
-
-<style>
-  .tron-icon path {
-    fill: #000000;
-  }
-
-  :global(.dark) .tron-icon path {
-    fill: #ffffff;
-  }
-</style>

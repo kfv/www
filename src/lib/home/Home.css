@@ -1,0 +1,46 @@
+.home-colophon {
+  margin-top: 3rem;
+  --stage-delay: 1.25s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-field {
+    transition: opacity 0.5s ease;
+  }
+
+  .home:has(.home-field:hover) .home-field {
+    opacity: 0.5;
+  }
+
+  .home:has(.home-field[data-axis='1']:hover) .home-field[data-axis='1'],
+  .home:has(.home-field[data-axis='2']:hover) .home-field[data-axis='2'],
+  .home:has(.home-field[data-axis='3']:hover) .home-field[data-axis='3'] {
+    opacity: 1;
+  }
+
+  .home:has(.home-field:hover) .home-axes path {
+    opacity: 0.28;
+  }
+
+  .home:has(.home-field:hover) .home-factor {
+    opacity: 0.35;
+  }
+
+  .home:has(.home-field[data-axis='1']:hover) .home-axes path.e1,
+  .home:has(.home-field[data-axis='2']:hover) .home-axes path.e2,
+  .home:has(.home-field[data-axis='3']:hover) .home-axes path.e3 {
+    opacity: 1;
+    stroke: var(--ink);
+  }
+
+  .home:has(.home-field:hover) .home-origin {
+    color: var(--ink);
+  }
+
+  .home:has(.home-field[data-axis='1']:hover) .home-factor.e1,
+  .home:has(.home-field[data-axis='2']:hover) .home-factor.e2,
+  .home:has(.home-field[data-axis='3']:hover) .home-factor.e3 {
+    opacity: 1;
+    color: var(--ink);
+  }
+}

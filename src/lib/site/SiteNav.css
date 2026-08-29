@@ -1,0 +1,13 @@
+.heart-pulse {
+  animation: heart-pulse 1.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes heart-pulse {
+  0%,
+  100% {
+    stroke: #d5d5d5;
+  }
+  50% {
+    stroke: #f472b6;
+  }
+}
