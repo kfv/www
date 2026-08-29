@@ -34,7 +34,7 @@
     {#each displayedPosts as [date, title, description, url]}
       <li>
         <span
-          class="md:absolute md:-left-24 mt-[4.5px] block italic
+          class="lg:absolute lg:-left-24 mt-[4.5px] block italic
                              text-sm text-neutral-500"
         >
           {date}

@@ -3,6 +3,7 @@
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
   import DonateModal from '$lib/DonateModal.svelte';
+  import GaussianWell from '$lib/GaussianWell.svelte';
 
   let gh_repo = 'https://github.com/kfv/www/';
   let gh_path = 'edit/main/src/routes';
@@ -10,27 +11,10 @@
   let isDonateModalOpen = false;
   let heartElement;
   let isHovering = false;
+  const shell = 'my-3 mx-auto w-full max-w-3xl px-7';
 
   onMount(() => {
-    const osPrefersDark = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
-
-    if (osPrefersDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
-    window
-      .matchMedia('(prefers-color-scheme: dark)')
-      .addEventListener('change', e => {
-        if (e.matches) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      });
+    document.documentElement.classList.add('dark');
   });
 
   function openDonateModal() {
@@ -68,11 +52,10 @@
   }
 </script>
 
-<nav class="border-b border-neutral-800">
-  <div
-    class="my-3 mx-11 sm:mx-24 md:mx-48 lg:mx-64 xl:mx-96 2xl:mx-[35rem]
-                text-neutral-700/80 dark:text-neutral-400"
-  >
+<GaussianWell />
+
+<nav class="relative z-10 border-b border-neutral-800">
+  <div class="{shell} text-neutral-700/80 dark:text-neutral-400">
     <a
       class="hover:text-black dark:hover:text-neutral-100 duration-500"
       href="/"
@@ -125,15 +108,12 @@
   </div>
 </nav>
 
-<div class="main relative"><slot /></div>
+<div class="main relative z-10"><slot /></div>
 
 <DonateModal isOpen={isDonateModalOpen} on:close={closeDonateModal} />
 
-<footer class="border-t border-neutral-800">
-  <div
-    class="text-sm text-neutral-400 my-3 mx-11 sm:mx-24 md:mx-48
-                lg:mx-64 xl:mx-96 2xl:mx-[35rem]"
-  >
+<footer class="relative z-10 border-t border-neutral-800">
+  <div class="text-sm text-neutral-400 {shell}">
     <p>
       &copy 2019-2026 Faraz Vahedi, CC BY 4.0
       <a
@@ -150,16 +130,11 @@
 
 <style>
   :global(body) {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
-  }
-
-  :global(.dark body) {
-    background-color: black;
-    color: white;
   }
 
   :global(h1) {

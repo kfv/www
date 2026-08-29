@@ -3,6 +3,7 @@
 @layer base {
   html {
     font-family: Roboto, sans-serif;
+    color-scheme: dark;
   }
 }
 
@@ -10,41 +11,58 @@
   flex-grow: 1;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  margin-left: 2.75rem;
-  margin-right: 2.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  width: 100%;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
-@media (min-width: 640px) {
-  .main {
-    margin-left: 6rem;
-    margin-right: 6rem;
+html.dark body {
+  background-color: #000;
+  color: #fff;
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 0.055) 0.6px,
+    transparent 0.7px
+  );
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}
+
+@keyframes stage-draw {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-@media (min-width: 768px) {
-  .main {
-    margin-left: 12rem;
-    margin-right: 12rem;
+@keyframes stage-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@media (min-width: 1024px) {
-  .main {
-    margin-left: 16rem;
-    margin-right: 16rem;
+@keyframes stage-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.55rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (min-width: 1280px) {
-  .main {
-    margin-left: 24rem;
-    margin-right: 24rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .main {
-    margin-left: 35rem;
-    margin-right: 35rem;
+@media (prefers-reduced-motion: reduce) {
+  .stage-draw,
+  .stage-fade,
+  .stage-rise {
+    animation: none !important;
   }
 }

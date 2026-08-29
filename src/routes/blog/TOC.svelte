@@ -81,7 +81,7 @@
 <style>
   .toc-container {
     width: 100%;
-    border-left: 1px solid #e5e7eb;
+    border-left: 1px solid rgb(38 38 38);
     padding-left: 1rem;
     color: #6b7280;
   }
@@ -95,15 +95,14 @@
 
   .toc-container a.active {
     font-weight: 700;
-    color: #000;
+    color: #fff;
   }
 
   :global(.dark) .toc-container a.active {
     color: #fff;
   }
 
-  /* Medium screens and up */
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     .toc-sticky-wrapper {
       position: sticky;
       top: 1.25rem;
@@ -113,10 +112,6 @@
       position: absolute;
       left: -10rem;
       width: 10rem;
-    }
-
-    .toc-container a.active {
-      color: #000;
     }
   }
 </style>
