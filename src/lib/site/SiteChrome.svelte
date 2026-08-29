@@ -3,9 +3,9 @@
   import GaussianWell from './GaussianWell.svelte';
   import SiteNav from './SiteNav.svelte';
   import SiteFooter from './SiteFooter.svelte';
-  import DonateModal from './DonateModal.svelte';
+  import SupportDialog from './SupportDialog.svelte';
 
-  let donateOpen = false;
+  let supportOpen = false;
 
   onMount(() => {
     document.documentElement.classList.add('dark');
@@ -13,7 +13,7 @@
 </script>
 
 <GaussianWell />
-<SiteNav {donateOpen} on:donate={() => (donateOpen = true)} />
+<SiteNav {supportOpen} on:support={() => (supportOpen = true)} />
 <div class="main relative z-10"><slot /></div>
-<DonateModal isOpen={donateOpen} on:close={() => (donateOpen = false)} />
+<SupportDialog isOpen={supportOpen} on:close={() => (supportOpen = false)} />
 <SiteFooter />
