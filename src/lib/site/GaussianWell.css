@@ -1,51 +1,94 @@
 .well {
-  display: none;
+  --ring-w: calc(var(--lattice) * 4);
+  --well-mask:
+    radial-gradient(
+      calc(16rem * var(--well-s, 1)) circle at var(--well-x, 50%)
+        var(--well-y, 20%),
+      rgb(0 0 0 / 1) 0%,
+      rgb(0 0 0 / 0.72) 22%,
+      rgb(0 0 0 / 0.38) 44%,
+      rgb(0 0 0 / 0.14) 66%,
+      rgb(0 0 0 / 0.03) 84%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at var(--r0-x, 0) var(--r0-y, 0),
+      transparent calc(var(--r0-r, 0px) - var(--ring-w)),
+      rgb(0 0 0 / calc(var(--r0-a, 0) * 0.32))
+        calc(var(--r0-r, 0px) - var(--ring-w) * 0.6),
+      rgb(0 0 0 / calc(var(--r0-a, 0) * 0.75))
+        calc(var(--r0-r, 0px) - var(--ring-w) * 0.3),
+      rgb(0 0 0 / var(--r0-a, 0)) var(--r0-r, 0px),
+      rgb(0 0 0 / calc(var(--r0-a, 0) * 0.75))
+        calc(var(--r0-r, 0px) + var(--ring-w) * 0.3),
+      rgb(0 0 0 / calc(var(--r0-a, 0) * 0.32))
+        calc(var(--r0-r, 0px) + var(--ring-w) * 0.6),
+      transparent calc(var(--r0-r, 0px) + var(--ring-w))
+    ),
+    radial-gradient(
+      circle at var(--r1-x, 0) var(--r1-y, 0),
+      transparent calc(var(--r1-r, 0px) - var(--ring-w)),
+      rgb(0 0 0 / calc(var(--r1-a, 0) * 0.32))
+        calc(var(--r1-r, 0px) - var(--ring-w) * 0.6),
+      rgb(0 0 0 / calc(var(--r1-a, 0) * 0.75))
+        calc(var(--r1-r, 0px) - var(--ring-w) * 0.3),
+      rgb(0 0 0 / var(--r1-a, 0)) var(--r1-r, 0px),
+      rgb(0 0 0 / calc(var(--r1-a, 0) * 0.75))
+        calc(var(--r1-r, 0px) + var(--ring-w) * 0.3),
+      rgb(0 0 0 / calc(var(--r1-a, 0) * 0.32))
+        calc(var(--r1-r, 0px) + var(--ring-w) * 0.6),
+      transparent calc(var(--r1-r, 0px) + var(--ring-w))
+    ),
+    radial-gradient(
+      circle at var(--r2-x, 0) var(--r2-y, 0),
+      transparent calc(var(--r2-r, 0px) - var(--ring-w)),
+      rgb(0 0 0 / calc(var(--r2-a, 0) * 0.32))
+        calc(var(--r2-r, 0px) - var(--ring-w) * 0.6),
+      rgb(0 0 0 / calc(var(--r2-a, 0) * 0.75))
+        calc(var(--r2-r, 0px) - var(--ring-w) * 0.3),
+      rgb(0 0 0 / var(--r2-a, 0)) var(--r2-r, 0px),
+      rgb(0 0 0 / calc(var(--r2-a, 0) * 0.75))
+        calc(var(--r2-r, 0px) + var(--ring-w) * 0.3),
+      rgb(0 0 0 / calc(var(--r2-a, 0) * 0.32))
+        calc(var(--r2-r, 0px) + var(--ring-w) * 0.6),
+      transparent calc(var(--r2-r, 0px) + var(--ring-w))
+    ),
+    radial-gradient(
+      circle at var(--well-x, 50%) var(--well-y, 20%),
+      rgb(0 0 0 / var(--floor, 0)) var(--floor-r, 0px),
+      transparent calc(var(--floor-r, 0px) + 12rem)
+    );
+
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.8s var(--stage-ease),
+    visibility 0s linear 0.8s;
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 0.7) 0.6px,
+    transparent 0.7px
+  );
+  background-size: var(--lattice) var(--lattice);
+  background-attachment: fixed;
+  mask-image: var(--well-mask);
+  -webkit-mask-image: var(--well-mask);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-position: 0 0;
+  -webkit-mask-position: 0 0;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .well {
-    display: block;
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    visibility: hidden;
-    background-image: radial-gradient(
-      circle,
-      rgb(255 255 255 / 0.7) 0.6px,
-      transparent 0.7px
-    );
-    background-size: var(--lattice) var(--lattice);
-    background-attachment: fixed;
-    mask-image: radial-gradient(
-      16rem circle at var(--well-x, 50%) var(--well-y, 20%),
-      rgb(0 0 0 / 1) 0%,
-      rgb(0 0 0 / 0.72) 22%,
-      rgb(0 0 0 / 0.38) 44%,
-      rgb(0 0 0 / 0.14) 66%,
-      rgb(0 0 0 / 0.03) 84%,
-      transparent 100%
-    );
-    -webkit-mask-image: radial-gradient(
-      16rem circle at var(--well-x, 50%) var(--well-y, 20%),
-      rgb(0 0 0 / 1) 0%,
-      rgb(0 0 0 / 0.72) 22%,
-      rgb(0 0 0 / 0.38) 44%,
-      rgb(0 0 0 / 0.14) 66%,
-      rgb(0 0 0 / 0.03) 84%,
-      transparent 100%
-    );
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    mask-size: 100% 100%;
-    -webkit-mask-size: 100% 100%;
-    mask-position: 0 0;
-    -webkit-mask-position: 0 0;
-  }
-
-  .well.on {
-    visibility: visible;
-  }
+.well.on {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s var(--stage-ease);
 }
 
 @media (prefers-reduced-motion: reduce) {
