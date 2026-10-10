@@ -18,8 +18,8 @@
     const idleTimeoutMs = ['localhost', '127.0.0.1', '[::1]'].includes(
       window.location.hostname
     )
-      ? 10_000
-      : 120_000;
+      ? 5_000
+      : 10_000;
 
     // Idle: the lit field spreads out from the well until every dot is at
     // FLOOR, and the well becomes a light source drifting on a slow
