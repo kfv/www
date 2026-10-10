@@ -1,10 +1,11 @@
 <script>
   import PostList from '$lib/blog/PostList.svelte';
-  import { posts } from '$lib/blog/posts.js';
+
+  export let data;
 </script>
 
 <svelte:head>
   <title>Blog — Faraz Vahedi</title>
 </svelte:head>
 
-<PostList {posts} />
+<PostList posts={data.posts} />

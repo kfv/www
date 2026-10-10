@@ -4,7 +4,11 @@
 
   const gh_repo = 'https://github.com/kfv/www/';
   const gh_path = 'edit/main/src/routes';
-  const page_fd = '/+page.svelte';
+
+  // Blog posts are Markdown (mdsvex); everything else is Svelte.
+  $: page_fd = /^\/blog\/[^/]+$/.test($page.route.id ?? '')
+    ? '/+page.svx'
+    : '/+page.svelte';
 </script>
 
 <footer class="relative z-10 border-t border-neutral-800">
