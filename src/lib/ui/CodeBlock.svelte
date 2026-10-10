@@ -29,7 +29,7 @@
     {/if}
     {#if copied}
       <span in:fade={{ duration: 500 }}>
-        Copied <i class="ml-1 fa-regular fa-check"></i>
+        Copied <i class="ml-1 fa-solid fa-check"></i>
       </span>
     {/if}
   </button>
