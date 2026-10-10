@@ -3,6 +3,7 @@ import typescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
@@ -16,16 +17,17 @@ export default [
         extraFileExtensions: ['.svelte'],
       },
       globals: {
-        browser: true,
-        es2017: true,
-        node: true,
+        ...globals.browser,
+        ...globals.node,
       },
     },
     plugins: {
       '@typescript-eslint': typescript,
-      svelte: svelte,
     },
     rules: {
+      // Superseded by the typescript-eslint version below, which also
+      // honours the leading-underscore convention.
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_' },
@@ -40,10 +42,10 @@ export default [
       'no-var': 'error',
     },
   },
+  ...svelte.configs.base,
   {
     files: ['**/*.svelte'],
     languageOptions: {
-      parser: svelte.parser,
       parserOptions: {
         parser: typescriptParser,
       },

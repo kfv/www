@@ -1,7 +1,5 @@
 <script module>
-  import CodeBlock from '$lib/ui/CodeBlock.svelte';
-
-  export { CodeBlock };
+  export { default as CodeBlock } from '$lib/ui/CodeBlock.svelte';
 </script>
 
 <script>
