@@ -1,12 +1,18 @@
+import { browser } from '$app/environment';
 import { REPOS } from './config.js';
 import { FALLBACK } from './fallback.js';
+
+const SHA = /^[0-9a-f]{40}$/;
 
 function gitHubHeaders() {
   const headers = {
     Accept: 'application/vnd.github+json',
-    'X-GitHub-Api-Version': '2022-11-28',
-    'User-Agent': 'kfv.io',
   };
+
+  if (browser) return headers;
+
+  headers['X-GitHub-Api-Version'] = '2022-11-28';
+  headers['User-Agent'] = 'kfv.io';
 
   const token =
     typeof process !== 'undefined' ? process.env.GITHUB_TOKEN : undefined;
@@ -29,7 +35,9 @@ function commitHref(repo, sha) {
 }
 
 function normalizeCommit(commit, repo) {
-  const sha = commit.sha;
+  const sha = commit?.sha;
+  if (typeof sha !== 'string' || !SHA.test(sha)) return null;
+
   const message = commit.commit?.message ?? '';
 
   return {
@@ -39,6 +47,10 @@ function normalizeCommit(commit, repo) {
     date: commit.commit?.author?.date ?? '',
     url: commitHref(repo, sha),
   };
+}
+
+function byDate(a, b) {
+  return (b.date || '').localeCompare(a.date || '');
 }
 
 function fallbackCommits(repo) {
@@ -52,30 +64,44 @@ function fallbackCommits(repo) {
   }));
 }
 
-async function fetchRepoCommits(repo, fetchImpl) {
-  const fallback = fallbackCommits(repo);
+async function fetchCommitPage(repo, page, fetchImpl) {
   const perPage = repo.limit ?? 12;
   const endpoint =
     `https://api.github.com/repos/${repo.owner}/${repo.name}` +
-    `/commits?author=${encodeURIComponent(repo.author)}&per_page=${perPage}`;
+    `/commits?author=${encodeURIComponent(repo.author)}` +
+    `&per_page=${perPage}&page=${page}`;
 
-  try {
-    const res = await fetchImpl(endpoint, {
-      headers: gitHubHeaders(),
-      signal: AbortSignal.timeout(8000),
-    });
+  const res = await fetchImpl(endpoint, {
+    headers: gitHubHeaders(),
+    signal: AbortSignal.timeout(8000),
+  });
 
-    if (!res.ok) return fallback;
-
-    const payload = await res.json();
-    if (!Array.isArray(payload) || payload.length === 0) return fallback;
-
-    return payload
-      .map(commit => normalizeCommit(commit, repo))
-      .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-  } catch {
-    return fallback;
+  if (!res.ok) {
+    const err = new Error(`GitHub API ${res.status}`);
+    err.status = res.status;
+    throw err;
   }
+
+  const payload = await res.json();
+  if (!Array.isArray(payload)) throw new Error('unexpected GitHub response');
+
+  return {
+    commits: payload
+      .map(commit => normalizeCommit(commit, repo))
+      .filter(Boolean)
+      .sort(byDate),
+    more: payload.length === perPage,
+  };
+}
+
+async function loadRepo(repo, fetchImpl) {
+  try {
+    const { commits, more } = await fetchCommitPage(repo, 1, fetchImpl);
+    if (commits.length) return { commits, page: 1, more };
+  } catch {
+    // fall through
+  }
+  return { commits: fallbackCommits(repo), page: 0, more: true };
 }
 
 export async function loadContributions(fetchImpl) {
@@ -84,9 +110,28 @@ export async function loadContributions(fetchImpl) {
       id: repoId(repo),
       label: repoId(repo),
       url: repo.url,
-      commits: await fetchRepoCommits(repo, fetchImpl),
+      logUrl: repo.logUrl,
+      ...(await loadRepo(repo, fetchImpl)),
     }))
   );
 
   return { sources };
+}
+
+export async function loadOlderCommits(source, fetchImpl) {
+  const repo = REPOS.find(r => repoId(r) === source.id);
+  if (!repo) throw new Error(`unknown source ${source.id}`);
+
+  const page = source.page + 1;
+  const { commits, more } = await fetchCommitPage(repo, page, fetchImpl);
+  const seen = new Set(source.commits.map(c => c.sha));
+
+  return {
+    ...source,
+    commits: source.commits
+      .concat(commits.filter(c => !seen.has(c.sha)))
+      .sort(byDate),
+    page,
+    more,
+  };
 }
