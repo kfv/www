@@ -167,7 +167,10 @@
         </button>
       {/if}
       <span class="notes-status" role="status">{error}</span>
-      <a class="notes-full duration-500" href={ACTOR.url}>on bluesky</a>
+      <a class="notes-full duration-500" href={ACTOR.url}>
+        on bluesky
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
     </div>
   </figure>
 </article>
