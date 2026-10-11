@@ -13,6 +13,7 @@
     <a href="/">kfv</a>
     <div class="site-nav-links">
       <a href="/blog/">blog</a>
+      <a href="/notes/">notes</a>
       <a href="/about/">about</a>
       <button
         type="button"
